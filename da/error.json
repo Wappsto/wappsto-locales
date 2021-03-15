@@ -1,0 +1,25 @@
+{
+  "300084": "brugernavn og adgangskode stemmer ikke overens.",
+  "400006": "du har ikke tilladelse til at tilgå denne enhed.",
+  "9900032": "ugyldig handling",
+  "9900145": "IoT-enheden med det givne UUID blev ikke fundet",
+  "9900147": "IoT-enheden med det givne UUID findes ikke.",
+  "134000005": "enheden er utilgængelig eller offline",
+  "generic": "noget gik galt.",
+  "noResponse": "noget gik galt, kontroller at du har forbindelse til internettet",
+  "status": {
+      "503": "service ikke tilgængelig"
+  },
+  "internetConnectionLost": "ingen internetforbindelse",
+  "stream": {
+      "connectionLost": "ingen stream forbindelse",
+      "code": {
+          "4000": "intern serverfejl",
+          "4001": "session ikke gyldig",
+          "4002": "forbudt",
+          "4003": "manglende stream-subscription",
+          "4004": "afbrudt",
+          "4005": "kunne ikke åbne websocket"
+      }
+  }
+}
