@@ -1,0 +1,161 @@
+{
+  "uuid":"ID",
+  "timestamp":"timestamp",
+  "true":"true",
+  "false":"false",
+  "network":"device",
+  "network_plural":"devices",
+  "networkProperties":{
+     "name":"$t(dataModel:network)",
+     "description":"description",
+     "meta":{
+        "id":"$t(dataModel:network) $t(dataModel:uuid)",
+        "version":"object version",
+        "created":"created",
+        "updated":"updated",
+        "connection":"connection",
+        "connectionOnline":{
+           "true":"online",
+           "false":"offline"
+        },
+        "connectionTimestamp":"$t(dataModel:timestamp)"
+     },
+     "device":"thing",
+     "device_plural":"things",
+     "deviceProperties":{
+        "meta":{
+           "id":"$t(dataModel:device) $t(dataModel:uuid)",
+           "version":"$t(dataModel:networkProperties.meta.version)",
+           "created":"$t(dataModel:networkProperties.meta.created)",
+           "updated":"$t(dataModel:networkProperties.meta.updated)"
+        },
+        "name":"$t(dataModel:device) name",
+        "version":"version",
+        "product":"product",
+        "protocol":"protocol",
+        "serial":"serial",
+        "communication":"communication",
+        "description":"$t(dataModel:networkProperties.description)",
+        "manufacturer":"manufacturer",
+        "control_timeout":"control timeout",
+        "control_when_offline":"control_when_offline",
+        "included":"included",
+        "inclusion_status":"inclusion status",
+        "inclusion_statusOptions":{
+          "STATUS_DEVICE_INCLUDING":"device including",
+          "STATUS_DEVICE_INCLUSION_SUCCESS":"inclusion successful",
+          "STATUS_DEVICE_INCLUSION_FAILURE":"inclusion failed",
+          "STATUS_DEVICE_REPORTING":"device reporting",
+          "STATUS_DEVICE_REPORT_SUCCESS":"device reported successfully",
+          "STATUS_DEVICE_REPORT_FAILURE":"device failed to report",
+          "EXCLUDED":"excluded",
+          "INCLUDED":"included"
+        },
+        "firmware_status":"firmware status",
+        "firmware_statusOptions":{
+          "UP_TO_DATE":"up to date",
+          "UPDATE_AVAILABLE":"update available",
+          "UPLOADING":"uploading",
+          "UPLOAD_COMPLETE":"upload complete",
+          "UPLOADING_FAILURE":"uploading failure",
+          "FLASHING":"flashing",
+          "FLASHING_COMPLETE":"flashing complete",
+          "FLASHING_FAILURE":"flashing failure"
+        },
+        "firmware_upload_progress": "firmware upload progress",
+        "firmware_available_version": "firmware available version",
+        "geo":"geolocation",
+        "geoProperties":{
+          "latitude":"latitude",
+          "longitude":"longitude",
+          "display_name":"name",
+          "address":"address"
+        },
+        "status":"status"
+     },
+     "value":"value",
+     "value_plural":"values",
+     "valueProperties":{
+        "meta":{
+           "id":"$t(dataModel:value) $t(dataModel:uuid)",
+           "version":"$t(dataModel:networkProperties.meta.version)",
+           "created":"$t(dataModel:networkProperties.meta.created)",
+           "updated":"$t(dataModel:networkProperties.meta.updated)"
+        },
+        "name":"$t(dataModel:value) name",
+        "description":"$t(dataModel:networkProperties.description)",
+        "type":"type",
+        "period":"period",
+        "delta":"delta",
+        "permission":"permission",
+        "permissionOptions":{
+           "none":"none",
+           "r":"read",
+           "w":"write",
+           "rw":"$t(dataModel:valueProperties.permissionOptions.r), $t(dataModel:valueProperties.permissionOptions.w)",
+           "wr":"$t(dataModel:valueProperties.permissionOptions.rw)"
+        },
+        "status":"$t(dataModel:deviceProperties.status)",
+        "statusOptions":{
+          "ok":"ok",
+          "update":"update",
+          "pending":"pending"
+        },
+        "dataType":"data type",
+        "number":"number",
+        "numberProperties":{
+          "si_conversion":"SI conversion",
+          "unit":"unit",
+          "max":"maximum number",
+          "min":"minimum number",
+          "step":"step size",
+          "mapping":"mapping",
+          "ordered_mapping": "ordered mapping",
+          "meaningful_zero": "meaningful zero"
+        },
+        "string":"string",
+        "stringProperties":{
+          "encoding":"encoding",
+          "max":"maximum length"
+        },
+        "blob":"blob",
+        "blobProperties":{
+          "encoding":"$t(dataModel:valueProperties.stringProperties.encoding)",
+          "max":"$t(dataModel:valueProperties.stringProperties.max)"
+        },
+        "xml":"xml",
+        "xmlProperties":{
+          "xsd":"XSD",
+          "namespace":"namespace"
+        }
+     },
+     "state":"state",
+     "state_plural":"states",
+     "stateProperties":{
+        "meta":{
+           "id":"$t(dataModel:value) $t(dataModel:uuid)",
+           "version":"$t(dataModel:networkProperties.meta.version)",
+           "created":"$t(dataModel:networkProperties.meta.created)",
+           "updated":"$t(dataModel:networkProperties.meta.updated)"
+        },
+        "data":"data",
+        "type":"$t(dataModel:valueProperties.type)",
+        "typeOptions":{
+          "Report":"desired",
+          "Control":"current"
+        },
+        "status":"$t(dataModel:deviceProperties.status)",
+        "statusOptions":{
+          "Send":"send",
+          "Pending":"pending",
+          "Failed":"failed"
+        },
+        "timestamp":"$t(dataModel:timestamp)",
+        "controlState":"$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+        "reportState":"$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+        "initialState":"initial $t(dataModel:state) data",
+        "initialControlState":"initial $t(dataModel:stateProperties.controlState)",
+        "initialReportState":"initial $t(dataModel:stateProperties.reportState)"
+     }
+  }
+}
