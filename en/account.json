@@ -11,43 +11,61 @@
   "password": "password",
   "currentPassword": "current password",
   "newPassword": "new password",
-  "namePlaceholder":"add name, surname",
+  "namePlaceholder": "add name, surname",
   "repeatPassword": "repeat password",
   "createAccount": "create an account",
   "continue": "continue",
-  "recoverPassword": "recover password",
-  "logIn": "log in",
+  "signIn": "sign in",
   "signInWithFacebook": "sign in with Facebook",
   "signInWithGoogle": "sign in with Google",
   "privacyNotice": "privacy",
+  "rememberMe": "remember me",
   "termsAndConditions": "Terms & Conditions",
   "readAndAcceptTerms": "I have read and accept the terms and conditions.",
   "register": "register",
   "deleteAccount": "delete account",
   "signedInWith": "signed in with {{provider, CapitalizeFirst}}",
-  "recoverPasswordInfo": "we will send you an email with the link to change your password. Enter a valid email address below.",
-  "recoverPasswordConfirmation": "We have send you an email with a confirmation link. Please follow the link to reset your password.",
+  "forgotPassword": "forgot password",
+  "forgotPasswordInfo": "We will send you an email with the link to change your password. Enter a valid email address below.",
+  "forgotPasswordConfirmation": "We have send you an email with a confirmation link. Please follow the link to reset your password.",
+  "forgotPasswordButton": "send",
+  "recoverPassword": "recover password",
+  "recoverPasswordInfo": "Enter your new password below.",
+  "recoverPasswordConfirmation": "Your new password has been saved.",
+  "recoverPasswordButton": "save",
   "changePassword": "change password",
   "changePasswordInfo": "Enter your old and new password to make a change.",
-  "changePasswordConfirmation": "Your password has been changed",
+  "changePasswordConfirmation": "Your password has been changed.",
   "changeUsername": "change username",
-  "changeUsernameInfo": "to change your username, enter your credentials and a valid email address you want change to.",
+  "changeUsernameInfo": "To change your username, enter your credentials and a valid email address you want change to.",
   "changeUsernameConfirmation": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
   "deleteAccountTitle": "delete account",
   "deleteAccountInfo": "you can request your account termination. Once you send the request, we will send you an email with the link. Follow the link to confirm your account deletion.",
   "deleteAccountSuccess": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
   "registrationInfo": "Please enter the following information to create an account.",
   "registrationConfirmation": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
-  "changeUserDetailsSuccess": "User details changed successfully",
-  "changePasswordSuccess": "Password changed successfully",
+  "changeUserDetailsSuccess": "User details changed successfully.",
+  "changePasswordSuccess": "Password changed successfully.",
+  "verification": {
+    "deleteAccount": {
+      "error": "An error accured when deleting your account. Please try again.",
+      "pending": "deleting your account...",
+      "success": "Your account has been deleted."
+    },
+    "emailConfirmation": {
+      "error": "An error accured when verifying your email address. Please try again.",
+      "pending": "verifying your email...",
+      "success": "Your email has been verified."
+    }
+  },
   "validation": {
     "password": "password is required",
     "repeatPassword": "passwords do not match",
     "username": "missing or invalid email"
   },
-  "acceptTermsWhenSignIn":{
-    "message":"by signing in, you agree to our $t(account:acceptTermsWhenSignIn.terms) and that you have read our $t(account:acceptTermsWhenSignIn.privacy).",
-    "terms":"Terms",
+  "acceptTermsWhenSignIn": {
+    "message": "By signing in, you agree to our $t(account:acceptTermsWhenSignIn.terms) and that you have read our $t(account:acceptTermsWhenSignIn.privacy).",
+    "terms": "Terms",
     "privacy": "Privacy Notice"
   }
 }

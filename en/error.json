@@ -1,16 +1,23 @@
 {
-  "300084": "username and password do not match.",
-  "400006": "you don't have permission to access this device ID.",
-  "9900032": "invalid action!",
-  "9900145": "the IoT device with provided ID is not found",
-  "9900147": "the IoT device with provided ID does not exist.",
-  "134000005": "device is unreachable or offline",
-  "generic": "something went wrong.",
-  "noResponse": "something went wrong, please verify that you are connected to internet",
-  "status": {
-    "503": "service unavailable"
-  },
   "internetConnectionLost": "internet connection is lost",
+  "fileTooBig": "the file is too big",
+  "generic": "something went wrong.",
+  "log": {
+    "fetch": "failed to get historical data",
+    "noNumber": "No historical data supported for this type of chart",
+    "noData": "No recorded data for this period of time",
+    "noValueIds": "No values found",
+    "noDeviceIds": "No Things found"
+  },
+  "noResponse": "something went wrong, please verify that you are connected to internet",
+  "notImage": "the file is not an image",
+  "statistics": {
+    "fetch": "failed to get data"
+  },
+  "status": {
+    "503": "service unavailable",
+    "502": "request timeout"
+  },
   "stream": {
     "connectionLost": "stream connection is lost",
     "code": {
@@ -21,5 +28,14 @@
       "4004": "stopped",
       "4005": "failed to open websocket"
     }
-  }
+  },
+  "300054": "verification link has expired.",
+  "300084": "username or password does not match.",
+  "400006": "you don't have permission to access this.",
+  "9900007": "Please verify you are not a robot.",
+  "9900032": "invalid action",
+  "9900145": "provided UUID is not found.",
+  "9900147": "provided UUID does not exist.",
+  "134000005": "device is unreachable or offline.",
+  "134000006": "device is taking too long to respond."
 }
