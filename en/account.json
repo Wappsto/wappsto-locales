@@ -41,11 +41,13 @@
   "changeUsernameConfirmation": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
   "deleteAccountTitle": "delete account",
   "deleteAccountInfo": "you can request your account termination. Once you send the request, we will send you an email with the link. Follow the link to confirm your account deletion.",
-  "deleteAccountSuccess": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
+  "deleteAccountConfirmation": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
+  "registrationTitle": "create account",
   "registrationInfo": "Please enter the following information to create an account.",
   "registrationConfirmation": "We have send you an email with a confirmation link. Please follow the link in the email to confirm.",
-  "changeUserDetailsSuccess": "User details changed successfully.",
-  "changePasswordSuccess": "Password changed successfully.",
+  "changeUserDetailsTitle": "personal details",
+  "changeUserDetailsInfo": "Your personal information is only used to perform customer support and provide better user experience.",
+  "changeUserDetailsConfirmation": "Personal details have been saved.",
   "verification": {
     "deleteAccount": {
       "error": "An error accured when deleting your account. Please try again.",
