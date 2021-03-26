@@ -16,7 +16,14 @@
       "false": "disabled"
     },
     "owner":"owner",
-    "manufacturer":"manufacturer"
+    "manufacturer":"manufacturer",
+    "geo": "geolocation",
+    "geoProperties": {
+      "latitude": "latitude",
+      "longitude": "longitude",
+      "display_name": "name",
+      "address": "address"
+    }
   },
   "network": "device",
   "network_plural": "devices",
@@ -37,14 +44,7 @@
   "device_plural": "things",
   "deviceProperties": {
     "meta": {
-      "id": "$t(dataModel:device) $t(dataModel:uuid)",
-      "geo": "geolocation",
-      "geoProperties": {
-        "latitude": "latitude",
-        "longitude": "longitude",
-        "display_name": "name",
-        "address": "address"
-      }
+      "id": "$t(dataModel:device) $t(dataModel:uuid)"
     },
     "name": "$t(dataModel:device) name",
     "version": "version",

@@ -2,13 +2,6 @@
   "internetConnectionLost": "internet connection is lost",
   "fileTooBig": "the file is too big",
   "generic": "something went wrong.",
-  "log": {
-    "fetch": "failed to get historical data",
-    "noNumber": "No historical data supported for this type of chart",
-    "noData": "No recorded data for this period of time",
-    "noValueIds": "No values found",
-    "noDeviceIds": "No Things found"
-  },
   "noResponse": "something went wrong, please verify that you are connected to internet",
   "notImage": "the file is not an image",
   "statistics": {
@@ -30,12 +23,14 @@
     }
   },
   "300054": "verification link has expired.",
+  "300063": "wrong password",
   "300084": "username or password does not match.",
   "400006": "you don't have permission to access this.",
   "9900007": "Please verify you are not a robot.",
   "9900032": "invalid action",
   "9900145": "provided UUID is not found.",
   "9900147": "provided UUID does not exist.",
+  "129000004": "username doesn't match",
   "134000005": "device is unreachable or offline.",
   "134000006": "device is taking too long to respond."
 }

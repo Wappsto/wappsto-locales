@@ -60,6 +60,7 @@
     }
   },
   "validation": {
+    "invalid": "invalid $t(account:{{field}})",
     "required": "$t(account:{{field}}) is required",
     "requiredField": "this is a required field",
     "repeatPassword": "passwords do not match",
