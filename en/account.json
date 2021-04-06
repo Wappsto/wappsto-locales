@@ -16,6 +16,7 @@
   "createAccount": "create an account",
   "continue": "continue",
   "signIn": "sign in",
+  "signInUsingEmail": "sign in using email",
   "signInWithFacebook": "sign in with Facebook",
   "signInWithGoogle": "sign in with Google",
   "privacyNotice": "privacy",
