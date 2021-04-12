@@ -154,6 +154,9 @@
       "Pending": "pending",
       "Failed": "failed"
     },
+    "status_payment":{
+      "not_shared": "you don't have access to this data"
+    },
     "timestamp": "$t(dataModel:timestamp)",
     "controlState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
     "reportState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
