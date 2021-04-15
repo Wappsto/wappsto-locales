@@ -4,7 +4,7 @@
   "generic": "something went wrong.",
   "noResponse": "something went wrong, please verify that you are connected to internet",
   "notImage": "the file is not an image",
-  "invalidSession": "your session is invelid",
+  "invalidSession": "your session is invalid",
   "statistics": {
     "fetch": "failed to get data"
   },
