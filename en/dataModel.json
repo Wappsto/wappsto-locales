@@ -155,7 +155,8 @@
       "Failed": "failed"
     },
     "status_payment":{
-      "not_shared": "you don't have access to this data"
+      "not_shared": "you don't have access to this data",
+      "not_paid": "you haven't paid to access to this data"
     },
     "timestamp": "$t(dataModel:timestamp)",
     "controlState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
