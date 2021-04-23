@@ -3,6 +3,11 @@
   "timestamp": "timestamp",
   "true": "true",
   "false": "false",
+  "name": "",
+  "description": "description",
+  "product": "product",
+  "status": "status",
+  "type": "type",
   "universalMeta":{
     "id": "$t(dataModel:uuid)",
     "version": "object version",
@@ -28,11 +33,11 @@
   "network": "device",
   "network_plural": "devices",
   "networkProperties": {
-    "name": "$t(dataModel:network)",
-    "description": "description",
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
     "meta": {
       "id": "$t(dataModel:network) $t(dataModel:uuid)",
-      "product": "product",
+      "product": "$t(dataModel:product)",
       "connection": "connection",
       "connectionOnline": {
         "true": "online",
@@ -46,25 +51,25 @@
     "meta": {
       "id": "$t(dataModel:device) $t(dataModel:uuid)"
     },
-    "name": "$t(dataModel:device) name",
-    "version": "version",
-    "product": "product",
+    "name": "$t(dataModel:name)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
     "protocol": "protocol",
     "serial": "serial",
     "communication": "communication",
-    "description": "$t(dataModel:networkProperties.description)",
+    "description": "$t(dataModel:description)",
     "manufacturer": "manufacturer",
     "control_timeout": "control timeout",
     "control_when_offline": "control_when_offline",
     "included": "included",
     "inclusion_status": "inclusion status",
     "inclusion_statusOptions": {
-      "STATUS_DEVICE_INCLUDING": "device including",
+      "STATUS_DEVICE_INCLUDING": "inclusion in progress...",
       "STATUS_DEVICE_INCLUSION_SUCCESS": "inclusion successful",
       "STATUS_DEVICE_INCLUSION_FAILURE": "inclusion failed",
-      "STATUS_DEVICE_REPORTING": "device reporting",
-      "STATUS_DEVICE_REPORT_SUCCESS": "device reported successfully",
-      "STATUS_DEVICE_REPORT_FAILURE": "device failed to report",
+      "STATUS_DEVICE_REPORTING": "reporting...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "reported successfully",
+      "STATUS_DEVICE_REPORT_FAILURE": "failed to report",
       "EXCLUDED": "excluded",
       "INCLUDED": "included"
     },
@@ -72,16 +77,16 @@
     "firmware_statusOptions": {
       "UP_TO_DATE": "up to date",
       "UPDATE_AVAILABLE": "update available",
-      "UPLOADING": "uploading",
-      "UPLOAD_COMPLETE": "upload complete",
-      "UPLOADING_FAILURE": "uploading failure",
-      "FLASHING": "flashing",
-      "FLASHING_COMPLETE": "flashing complete",
-      "FLASHING_FAILURE": "flashing failure"
+      "UPLOADING": "uploading...",
+      "UPLOAD_COMPLETE": "upload completed",
+      "UPLOADING_FAILURE": "failed to upload",
+      "FLASHING": "flashing...",
+      "FLASHING_COMPLETE": "flashing completed",
+      "FLASHING_FAILURE": "flashing failed"
     },
     "firmware_upload_progress": "firmware upload progress",
     "firmware_available_version": "firmware available version",
-    "status": "status"
+    "status": "$t(dataModel:status)"
   },
   "value": "value",
   "value_plural": "values",
@@ -91,7 +96,7 @@
     },
     "name": "$t(dataModel:value) name",
     "description": "$t(dataModel:networkProperties.description)",
-    "type": "type",
+    "type": "$t(dataModel:type)",
     "period": "period",
     "delta": "delta",
     "permission": "permission",
@@ -102,7 +107,7 @@
       "rw": "read and write",
       "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
     },
-    "status": "$t(dataModel:deviceProperties.status)",
+    "status": "$t(dataModel:status)",
     "statusOptions": {
       "ok": "ok",
       "update": "update",
@@ -143,14 +148,14 @@
       "id": "$t(dataModel:state) $t(dataModel:uuid)"
     },
     "data": "data",
-    "type": "$t(dataModel:valueProperties.type)",
+    "type": "$t(dataModel:type)",
     "typeOptions": {
       "Report": "desired",
       "Control": "current"
     },
-    "status": "$t(dataModel:deviceProperties.status)",
+    "status": "$t(dataModel:status)",
     "statusOptions": {
-      "Send": "send",
+      "Send": "sent",
       "Pending": "pending",
       "Failed": "failed"
     },
