@@ -169,5 +169,9 @@
     "initialState": "initial $t(dataModel:state) data",
     "initialControlState": "initial $t(dataModel:stateProperties.controlState)",
     "initialReportState": "initial $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "wrongMinNumber": "inserted number should larger than {{number}}",
+    "wrongMaxNumber": "inserted number should be smaller than {{number}}"
   }
 }
