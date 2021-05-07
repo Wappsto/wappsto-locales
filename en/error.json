@@ -24,6 +24,7 @@
     }
   },
   "300054": "verification link has expired.",
+  "300058": "username doesn't match",
   "300063": "wrong password",
   "300084": "username or password does not match.",
   "400006": "you don't have permission to access this.",
