@@ -53,7 +53,7 @@
   "lastOptions":{
     "last": "last",
     "lastX": "last $t(log:timeFrame.{{x}})",
-    "lastXTimeFrame": "last {{x}} $t(log:timeFrame.{{time}}, count: {{x}})",
+    "lastXTimeFrame": "last {{x}} $t(log:timeFrame.{{time}}, {\"count\": {{x}}})",
     "lastXPoints": "last {{x}} points",
     "1H": "1H",
     "1D": "1D",
