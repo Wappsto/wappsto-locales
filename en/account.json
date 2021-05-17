@@ -1,4 +1,5 @@
 {
+  "account": "account",
   "username": "username (email)",
   "currentUsername": "username (email)",
   "newUsername": "new username (email)",
@@ -20,6 +21,7 @@
   "signInUsingEmail": "sign in using email",
   "signInWithFacebook": "sign in with Facebook",
   "signInWithGoogle": "sign in with Google",
+  "logout": "logout",
   "privacyNotice": "privacy",
   "rememberMe": "remember me",
   "termsAndConditions": "Terms & Conditions",
