@@ -14,6 +14,7 @@
   "namePlaceholder": "add name, surname",
   "repeatPassword": "repeat password",
   "createAccount": "create an account",
+  "goBackToLogin":"go back to login",
   "continue": "continue",
   "signIn": "sign in",
   "signInUsingEmail": "sign in using email",
