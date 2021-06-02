@@ -13,6 +13,7 @@
     "id": "$t(dataModel:uuid)",
     "version": "object version",
     "iot": "IoT",
+    "virtual": "virtual",
     "created": "created",
     "changed": "changed",
     "updated": "updated",
