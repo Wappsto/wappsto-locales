@@ -5,6 +5,8 @@
   "point_plural": "points",
   "none": "none",
   "liveDataButton": "live",
+  "dataBased": "data",
+  "custom": "custom",
   "aggregation": "aggregation",
   "operation": "operation",
   "operationPostposition": "by",
@@ -63,7 +65,8 @@
   "infoText": {
     "groupBy": "group by",
     "configureAggregation": "To summarize data select an operation from below. Select 'none' to retrieve raw data.",
-    "configureTime": "configure time"
+    "configureTime": "configure time",
+    "configureYScale": "configure Y scale"
   },
   "timeFrame": {
     "microsecond": "microsecond",
