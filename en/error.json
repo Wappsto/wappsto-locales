@@ -27,6 +27,7 @@
   "300058": "username doesn't match",
   "300063": "wrong password",
   "300084": "username or password does not match.",
+  "300098": "You don't have enough points to perform this action.",
   "400006": "you don't have permission to access this.",
   "9900007": "Please verify you are not a robot.",
   "9900032": "invalid action",
