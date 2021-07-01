@@ -4,6 +4,7 @@
   "point": "point",
   "point_plural": "points",
   "none": "none",
+  "emptyData": "data is empty",
   "liveDataButton": "live",
   "dataBased": "data based",
   "custom": "custom",
