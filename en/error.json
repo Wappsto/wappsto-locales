@@ -34,6 +34,7 @@
   "9900145": "provided UUID is not found.",
   "9900147": "provided UUID does not exist.",
   "441000001": "You have reached the maximum number of allowed devices in your current subscription plan.",
+  "444000002": "Your account has ran of points.",
   "117000000": "$t(error:invalidSession)",
   "129000004": "username doesn't match",
   "134000005": "device is unreachable or offline.",
