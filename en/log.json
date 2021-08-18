@@ -6,6 +6,11 @@
   "none": "none",
   "emptyData": "data is empty",
   "liveDataButton": "live",
+  "chartDataType": {
+    "timeBased": "time based",
+    "pointBased": "point based",
+    "customDates": "custom dates"
+  },
   "dataBased": "data based",
   "custom": "custom",
   "aggregation": "aggregation",
