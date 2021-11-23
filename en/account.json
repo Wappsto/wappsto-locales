@@ -51,6 +51,7 @@
   "changeUserDetails": "personal details",
   "changeUserDetailsInfo": "Your personal information is only used to perform customer support and provide better user experience.",
   "changeUserDetailsConfirmation": "Personal details have been saved.",
+  "verifyEmailButton": "verify email",
   "verifyEmailSent": "verification email is sent",
   "verifyEmailSentInfo": "We have sent you an email with a verification link. Please follow the link to validate your email.",
   "verified_email": {
