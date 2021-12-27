@@ -44,6 +44,9 @@
       "connectionOnline": {
         "true": "online",
         "false": "offline"
+      },
+      "daily_limit": {
+        "point": "daily limit of points"
       }
     }
   },
