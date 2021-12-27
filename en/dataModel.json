@@ -46,7 +46,11 @@
         "false": "offline"
       },
       "daily_limit": {
-        "point": "daily limit of points"
+        "point": "daily limit of points",
+        "iot_traffic": "IoT traffic",
+        "request": "request",
+        "request_time": "request time",
+        "dynamic": "dynamic"
       }
     }
   },
