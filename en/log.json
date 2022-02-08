@@ -70,7 +70,7 @@
   },
   "infoText": {
     "groupBy": "group by",
-    "configureAggregation": "To summarize data select an operation from below. Select 'none' to retrieve raw data.",
+    "configureAggregation": "To aggregate data select a method below. Select 'none' to retrieve raw data.",
     "configureTime": "configure time",
     "configureYScale": "configure Y scale"
   },
