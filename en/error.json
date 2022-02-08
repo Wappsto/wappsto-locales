@@ -37,6 +37,7 @@
   "444000002": "Your account has ran of points.",
   "117000000": "$t(error:invalidSession)",
   "129000004": "username doesn't match",
+  "134000004": "The device has reported an error.",
   "134000005": "device is unreachable or offline.",
   "134000006": "device is taking too long to respond."
 }
