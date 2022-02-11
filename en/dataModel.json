@@ -182,7 +182,10 @@
     "initialReportState": "initial $t(dataModel:stateProperties.reportState)"
   },
   "validation": {
-    "wrongMinNumber": "inserted number should larger than {{number}}",
-    "wrongMaxNumber": "inserted number should be smaller than {{number}}"
+    "invalidNumber": "not a valid number",
+    "lengthTooLong": "the length should not exceed {{max}} characters",
+    "numberTooSmall": "the number should be larger than {{number}}",
+    "numberTooLarge": "the number should be smaller than {{number}}",
+    "outsideNumberRange": "the number should be between {{min}} and {{max}}"
   }
 }
