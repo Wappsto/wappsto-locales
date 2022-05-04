@@ -9,6 +9,7 @@
     "fetch": "failed to get data"
   },
   "status": {
+    "404": "wrong endpoint",
     "503": "service unavailable",
     "502": "request timeout"
   },

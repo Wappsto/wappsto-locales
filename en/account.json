@@ -25,6 +25,7 @@
   "privacyNotice": "privacy",
   "rememberMe": "remember me",
   "termsAndConditions": "Terms & Conditions",
+  "readAndAccept": "I have read and accept the",
   "readAndAcceptTerms": "I have read and accept the terms and conditions.",
   "register": "register",
   "signedInWith": "signed in with {{provider, CapitalizeFirst}}",
@@ -57,7 +58,7 @@
   "verified_email": {
     "true": "verified",
     "false": "not verified"
-  },  
+  },
   "verification": {
     "deleteAccount": {
       "error": "An error accured when deleting your account. Please try again.",

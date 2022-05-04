@@ -8,6 +8,7 @@
   "generic": "noget gik galt.",
   "noResponse": "noget gik galt, kontroller at du har forbindelse til internettet",
   "status": {
+    "404": "forkert endpoint",
       "503": "service ikke tilgængelig"
   },
   "internetConnectionLost": "ingen internetforbindelse",
