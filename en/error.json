@@ -10,8 +10,8 @@
   },
   "status": {
     "404": "wrong endpoint",
-    "503": "service unavailable",
-    "502": "request timeout"
+    "502": "request timeout",
+    "503": "service unavailable"
   },
   "stream": {
     "connectionLost": "stream connection is lost",

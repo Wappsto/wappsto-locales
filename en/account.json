@@ -18,6 +18,7 @@
   "goBackToLogin":"go back to login",
   "continue": "continue",
   "signIn": "sign in",
+  "signInWith": "Sign in with",
   "signInUsingEmail": "sign in using email",
   "signInWithFacebook": "sign in with Facebook",
   "signInWithGoogle": "sign in with Google",
@@ -25,7 +26,6 @@
   "privacyNotice": "privacy",
   "rememberMe": "remember me",
   "termsAndConditions": "Terms & Conditions",
-  "readAndAccept": "I have read and accept the",
   "readAndAcceptTerms": "I have read and accept the terms and conditions.",
   "register": "register",
   "signedInWith": "signed in with {{provider, CapitalizeFirst}}",
@@ -55,6 +55,7 @@
   "verifyEmailButton": "verify email",
   "verifyEmailSent": "verification email is sent",
   "verifyEmailSentInfo": "We have sent you an email with a verification link. Please follow the link to validate your email.",
+  "myID": "my user ID",
   "verified_email": {
     "true": "verified",
     "false": "not verified"

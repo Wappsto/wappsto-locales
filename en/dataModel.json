@@ -70,7 +70,7 @@
     "description": "$t(dataModel:description)",
     "manufacturer": "manufacturer",
     "control_timeout": "control timeout",
-    "control_when_offline": "control_when_offline",
+    "control_when_offline": "controllable while offline",
     "included": "included",
     "inclusion_status": "inclusion status",
     "inclusion_statusOptions": {
