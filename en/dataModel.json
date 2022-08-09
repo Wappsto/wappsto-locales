@@ -37,6 +37,7 @@
   "networkProperties": {
     "name": "$t(dataModel:name)",
     "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
     "meta": {
       "id": "$t(dataModel:network) $t(dataModel:uuid)",
       "product": "$t(dataModel:product)",
@@ -62,6 +63,7 @@
       "id": "$t(dataModel:device) $t(dataModel:uuid)"
     },
     "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
     "version": "$t(dataModel:version)",
     "product": "$t(dataModel:product)",
     "protocol": "protocol",
@@ -104,6 +106,7 @@
     "meta": {
       "id": "$t(dataModel:value) $t(dataModel:uuid)"
     },
+    "id": "$t(dataModel:valueProperties.meta.id)",
     "name": "$t(dataModel:value) name",
     "description": "$t(dataModel:networkProperties.description)",
     "type": "$t(dataModel:type)",
@@ -157,6 +160,7 @@
     "meta": {
       "id": "$t(dataModel:state) $t(dataModel:uuid)"
     },
+    "id": "$t(dataModel:stateProperties.meta.id)",
     "data": "data",
     "type": "$t(dataModel:type)",
     "typeOptions": {
