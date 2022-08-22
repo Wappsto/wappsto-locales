@@ -9,7 +9,7 @@
   "product": "product",
   "status": "status",
   "type": "type",
-  "universalMeta":{
+  "universalMeta": {
     "id": "$t(dataModel:uuid)",
     "version": "object version",
     "iot": "IoT",
@@ -22,8 +22,8 @@
       "true": "enabled",
       "false": "disabled"
     },
-    "owner":"owner",
-    "manufacturer":"manufacturer",
+    "owner": "owner",
+    "manufacturer": "manufacturer",
     "geo": "geolocation",
     "geoProperties": {
       "latitude": "latitude",
@@ -33,7 +33,7 @@
     }
   },
   "network": "device",
-  "network_plural": "devices",
+  "network_other": "devices",
   "networkProperties": {
     "name": "$t(dataModel:name)",
     "description": "$t(dataModel:description)",
@@ -57,7 +57,7 @@
     }
   },
   "device": "thing",
-  "device_plural": "things",
+  "device_other": "things",
   "deviceProperties": {
     "meta": {
       "id": "$t(dataModel:device) $t(dataModel:uuid)"
@@ -101,7 +101,7 @@
     "status": "$t(dataModel:status)"
   },
   "value": "value",
-  "value_plural": "values",
+  "value_other": "values",
   "valueProperties": {
     "meta": {
       "id": "$t(dataModel:value) $t(dataModel:uuid)"
@@ -155,7 +155,7 @@
     }
   },
   "state": "state",
-  "state_plural": "states",
+  "state_other": "states",
   "stateProperties": {
     "meta": {
       "id": "$t(dataModel:state) $t(dataModel:uuid)"
@@ -173,7 +173,7 @@
       "Pending": "pending",
       "Failed": "failed"
     },
-    "status_payment":{
+    "status_payment": {
       "not_shared": "you don't have access to this data",
       "not_paid": "you haven't paid to access to this data",
       "no_points": "Upgrade your subscription to view this data"
