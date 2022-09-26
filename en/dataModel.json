@@ -9,6 +9,11 @@
   "product": "product",
   "status": "status",
   "type": "type",
+  "connection": "connection",
+  "connectionOnline": {
+    "true": "online",
+    "false": "offline"
+  },
   "universalMeta": {
     "id": "$t(dataModel:uuid)",
     "version": "object version",
@@ -41,10 +46,10 @@
     "meta": {
       "id": "$t(dataModel:network) $t(dataModel:uuid)",
       "product": "$t(dataModel:product)",
-      "connection": "connection",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
       "connectionOnline": {
-        "true": "online",
-        "false": "offline"
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
       },
       "daily_limit": "daily limit",
       "daily_limitProperties": {
@@ -60,7 +65,12 @@
   "device_other": "things",
   "deviceProperties": {
     "meta": {
-      "id": "$t(dataModel:device) $t(dataModel:uuid)"
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      }
     },
     "name": "$t(dataModel:name)",
     "id": "$t(dataModel:deviceProperties.meta.id)",
