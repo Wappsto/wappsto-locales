@@ -28,7 +28,7 @@
   "signedInWith": "logget ind med {{provider, CapitalizeFirst}}",
   "recoverPasswordInfo": "vi sender en e-mail med link til at nulstille din adgangskode. Skriv en gyldig e-mailadresse nedenfor.",
   "recoverPasswordConfirmation": "Vi har sendt en e-mail med et bekræftelseslink. Følg linket for at nulstille din adgangskode.",
-  "changePassword": "skfit adgangskode",
+  "changePassword": "skift adgangskode",
   "changePasswordInfo": "indtast dit gamle og nye kodeord for at ændre det.",
   "changePasswordConfirmation": "Din adgangskode er skiftet",
   "changeUsername": "skift brugernavn (e-mail)",
