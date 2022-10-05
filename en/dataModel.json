@@ -174,8 +174,8 @@
     "data": "data",
     "type": "$t(dataModel:type)",
     "typeOptions": {
-      "Report": "desired",
-      "Control": "current"
+      "Report": "current",
+      "Control": "desired"
     },
     "status": "$t(dataModel:status)",
     "statusOptions": {
