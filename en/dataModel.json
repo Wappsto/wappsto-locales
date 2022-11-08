@@ -58,7 +58,8 @@
         "request": "request",
         "request_time": "request time",
         "dynamic": "dynamic"
-      }
+      },
+      "name_by_user": "$t(dataModel:name)"
     }
   },
   "device": "thing",
@@ -70,7 +71,8 @@
       "connectionOnline": {
         "true": "$t(dataModel:connectionOnline.true)",
         "false": "$t(dataModel:connectionOnline.false)"
-      }
+      },
+      "name_by_user": "$t(dataModel:name)"
     },
     "name": "$t(dataModel:name)",
     "id": "$t(dataModel:deviceProperties.meta.id)",
@@ -114,7 +116,8 @@
   "value_other": "values",
   "valueProperties": {
     "meta": {
-      "id": "$t(dataModel:value) $t(dataModel:uuid)"
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
     },
     "id": "$t(dataModel:valueProperties.meta.id)",
     "name": "$t(dataModel:value) name",
@@ -168,7 +171,8 @@
   "state_other": "states",
   "stateProperties": {
     "meta": {
-      "id": "$t(dataModel:state) $t(dataModel:uuid)"
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
     },
     "id": "$t(dataModel:stateProperties.meta.id)",
     "data": "data",
