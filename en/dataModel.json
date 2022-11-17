@@ -193,8 +193,8 @@
       "no_points": "Upgrade your subscription to view this data"
     },
     "timestamp": "$t(dataModel:timestamp)",
-    "controlState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
-    "reportState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
     "initialState": "initial $t(dataModel:state) data",
     "initialControlState": "initial $t(dataModel:stateProperties.controlState)",
     "initialReportState": "initial $t(dataModel:stateProperties.reportState)"
