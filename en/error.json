@@ -34,6 +34,7 @@
   "9900032": "invalid action",
   "9900145": "provided UUID is not found.",
   "9900147": "provided UUID does not exist.",
+  "368000003": "$t(error:generic)",
   "441000001": "You have reached the maximum number of allowed devices.",
   "444000002": "Your account has ran of points.",
   "505000021": "Invalid filter parameter is used: '{{wrong_value}}'",
