@@ -102,6 +102,9 @@
     "quarter": "quarter",
     "quarter_other": "quarters",
     "quarter_short": "q",
+    "halfyear": "half-year",
+    "halfyear_other": "half-years",
+    "halfyear_short": "hy"
     "year": "year",
     "year_other": "years",
     "year_short": "yr"
