@@ -43,7 +43,7 @@
   "changeUsername": "change username",
   "changeUsernameInfo": "To change your username, enter your credentials and a valid email address you want change to.",
   "changeUsernameConfirmation": "We have sent you an email with a confirmation link. Please follow the link in the email to confirm.",
-  "deleteAccount": "delete account",
+  "deleteAccount": "delete an account",
   "deleteAccountInfo": "you can request your account termination. Once you send the request, we will send you an email with the link. Follow the link to confirm your account deletion.",
   "deleteAccountConfirmation": "We have sent you an email with a confirmation link. Please follow the link in the email to confirm.",
   "registration": "create an account",
