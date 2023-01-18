@@ -46,7 +46,7 @@
   "deleteAccount": "delete account",
   "deleteAccountInfo": "you can request your account termination. Once you send the request, we will send you an email with the link. Follow the link to confirm your account deletion.",
   "deleteAccountConfirmation": "We have sent you an email with a confirmation link. Please follow the link in the email to confirm.",
-  "registration": "create account",
+  "registration": "create an account",
   "registrationInfo": "Please enter the following information to create an account.",
   "registrationConfirmation": "We have sent you an email with a confirmation link. Please follow the link in the email to confirm.",
   "changeUserDetails": "personal details",
