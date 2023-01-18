@@ -83,5 +83,10 @@
     "message": "By signing in, you agree to our $t(account:acceptTermsWhenSignIn.terms) and that you have read our $t(account:acceptTermsWhenSignIn.privacy).",
     "terms": "Terms",
     "privacy": "Privacy Notice"
+  },
+  "acceptTermsWhenRegister": {
+    "message": "I accept the $t(account:acceptTermsWhenSignIn.terms) and have read the $t(account:acceptTermsWhenSignIn.privacy).",
+    "terms": "Terms",
+    "privacy": "Privacy Notice"
   }
 }
