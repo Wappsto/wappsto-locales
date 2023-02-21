@@ -16,7 +16,7 @@
   "createAccount": "opret konto",
   "continue": "fortsæt",
   "recoverPassword": "nulstil adgangskode",
-  "logIn": "log ind",
+  "signIn": "log ind",
   "signInWith": "Log in med",
   "signInWithFacebook": "log ind med Facebook",
   "signInWithGoogle": "log ind med Google",
@@ -50,5 +50,10 @@
       "message": "ved at logge ind accepterer du vores $t(account:acceptTermsWhenSignIn.terms), samt at du har læst vores $t(account:acceptTermsWhenSignIn.privacy).",
       "terms": "generelle betingelser",
       "privacy": "privatlivspolitik"
+  },
+  "acceptTermsWhenRegister": {
+    "message": "Jeg accepterer $t(account:acceptTermsWhenSignIn.terms) og har læst $t(account:acceptTermsWhenSignIn.privacy).",
+    "terms": "Vilkårene",
+    "privacy": "Privatlivspolitikken"
   }
 }
