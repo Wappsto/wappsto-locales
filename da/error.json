@@ -1,26 +1,46 @@
 {
-  "300084": "brugernavn og adgangskode stemmer ikke overens.",
-  "400006": "du har ikke tilladelse til at tilgå denne enhed.",
+  "300054": "bekræftelseslinket er udløbet.",
+  "300058": "brugernavn stemmer ikke overens",
+  "300063": "forkert kodeord",
+  "300084": "brugernavn eller adgangskode stemmer ikke overens.",
+  "300098": "Du har ikke nok point til at udføre denne handling.",
+  "400006": "du har ikke tilladelse til at få adgang til dette.",
+  "9900007": "Bekræft venligst, at du ikke er en robot.",
   "9900032": "ugyldig handling",
   "9900145": "IoT-enheden med det givne UUID blev ikke fundet",
   "9900147": "IoT-enheden med det givne UUID findes ikke.",
-  "134000005": "enheden er utilgængelig eller offline",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "brugernavn stemmer ikke overens",
+  "134000004": "Enheden har rapporteret en fejl.",
+  "134000005": "enheden er utilgængelig eller offline.",
+  "134000006": "enheden tager for lang tid at svare.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Du har nået det maksimale antal tilladte enheder.",
+  "444000002": "Din konto er løbet tør for point.",
+  "505000021": "Ugyldig filterparameter er brugt: '{{wrong_value}}'",
+  "internetConnectionLost": "internetforbindelse er mistet",
+  "fileTooBig": "filen er for stor",
   "generic": "noget gik galt.",
-  "noResponse": "noget gik galt, kontroller at du har forbindelse til internettet",
+  "noResponse": "noget gik galt. Bekræft venligst, at du har forbindelse til internettet",
+  "notImage": "filen er ikke et billede",
+  "invalidSession": "din session er ugyldig",
+  "statistics": {
+    "fetch": "kunne ikke hente data"
+  },
   "status": {
     "404": "forkert endpoint",
-      "503": "service ikke tilgængelig"
+    "502": "bed om pause",
+    "503": "service ikke tilgængelig"
   },
-  "internetConnectionLost": "ingen internetforbindelse",
   "stream": {
-      "connectionLost": "ingen stream forbindelse",
-      "code": {
-          "4000": "intern serverfejl",
-          "4001": "session ikke gyldig",
-          "4002": "forbudt",
-          "4003": "manglende stream-subscription",
-          "4004": "afbrudt",
-          "4005": "kunne ikke åbne websocket"
-      }
+    "connectionLost": "ingen stream forbindelse",
+    "code": {
+      "4000": "intern server fejl",
+      "4001": "session ikke gyldig",
+      "4002": "forbudt",
+      "4003": "manglende stream-subscription",
+      "4004": "afbrudt",
+      "4005": "kunne ikke åbne WebSocket"
+    }
   }
 }

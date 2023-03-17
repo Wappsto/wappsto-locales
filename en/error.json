@@ -21,7 +21,7 @@
       "4002": "forbidden",
       "4003": "missing subscription",
       "4004": "stopped",
-      "4005": "failed to open websocket"
+      "4005": "failed to open WebSocket"
     }
   },
   "300054": "verification link has expired.",
@@ -36,7 +36,7 @@
   "9900147": "provided UUID does not exist.",
   "368000003": "$t(error:generic)",
   "441000001": "You have reached the maximum number of allowed devices.",
-  "444000002": "Your account has ran of points.",
+  "444000002": "Your account has run out of points.",
   "505000021": "Invalid filter parameter is used: '{{wrong_value}}'",
   "117000000": "$t(error:invalidSession)",
   "129000004": "username doesn't match",
