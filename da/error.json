@@ -13,15 +13,15 @@
   "129000004": "brugernavn stemmer ikke overens",
   "134000004": "Enheden har rapporteret en fejl.",
   "134000005": "enheden er utilgængelig eller offline.",
-  "134000006": "enheden tager for lang tid at svare.",
+  "134000006": "enheden tager for lang tid om at svare.",
   "368000003": "$t(error:generic)",
   "441000001": "Du har nået det maksimale antal tilladte enheder.",
   "444000002": "Din konto er løbet tør for point.",
   "505000021": "Ugyldig filterparameter er brugt: '{{wrong_value}}'",
-  "internetConnectionLost": "internetforbindelse er mistet",
+  "internetConnectionLost": "ingen internetforbindelse",
   "fileTooBig": "filen er for stor",
   "generic": "noget gik galt.",
-  "noResponse": "noget gik galt. Bekræft venligst, at du har forbindelse til internettet",
+  "noResponse": "noget gik galt. Sørg for, at du har forbindelse til internettet",
   "notImage": "filen er ikke et billede",
   "invalidSession": "din session er ugyldig",
   "statistics": {
@@ -29,7 +29,7 @@
   },
   "status": {
     "404": "forkert endpoint",
-    "502": "bed om pause",
+    "502": "forespørgsel timede ud",
     "503": "service ikke tilgængelig"
   },
   "stream": {

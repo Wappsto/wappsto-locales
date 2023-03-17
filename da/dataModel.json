@@ -1,8 +1,8 @@
 {
   "uuid": "ID",
   "timestamp": "tidsstempel",
-  "true": "rigtigt",
-  "false": "falsk",
+  "true": "SAND",
+  "false": "FALSK",
   "name": "navn",
   "version": "version",
   "description": "beskrivelse",
@@ -18,21 +18,21 @@
     "id": "$t(dataModel:uuid)",
     "version": "objektversion",
     "iot": "IoT",
-    "virtual": "virtuelle",
+    "virtual": "virtuel",
     "created": "oprettet",
     "changed": "ændret",
     "updated": "opdateret",
     "historical": "historiske datalogs",
     "historicalOptions": {
       "true": "aktiveret",
-      "false": "handicappet"
+      "false": "deaktiveret"
     },
     "owner": "ejer",
     "manufacturer": "fabrikant",
     "geo": "geolokation",
     "geoProperties": {
-      "latitude": "Breddegrad",
-      "longitude": "længde",
+      "latitude": "breddegrad",
+      "longitude": "længdegrad",
       "display_name": "navn",
       "address": "adresse"
     }
@@ -55,8 +55,8 @@
       "daily_limitProperties": {
         "point": "point",
         "iot_traffic": "IoT-trafik",
-        "request": "anmodning",
-        "request_time": "anmode om tid",
+        "request": "forespørgsel",
+        "request_time": "forespørgselstid",
         "dynamic": "dynamisk"
       },
       "name_by_user": "$t(dataModel:name)"
@@ -79,12 +79,12 @@
     "version": "$t(dataModel:version)",
     "product": "$t(dataModel:product)",
     "protocol": "protokol",
-    "serial": "seriel",
-    "communication": "meddelelse",
+    "serial": "serienr.",
+    "communication": "forbindelsesform",
     "description": "$t(dataModel:description)",
     "manufacturer": "fabrikant",
     "control_timeout": "kontrol timeout",
-    "control_when_offline": "kontrollerbar, mens du er offline",
+    "control_when_offline": "kontrollerbar mens offline",
     "included": "inkluderet",
     "inclusion_status": "inklusionsstatus",
     "inclusion_statusOptions": {
@@ -92,9 +92,9 @@
       "STATUS_DEVICE_INCLUSION_SUCCESS": "inklusion lykkedes",
       "STATUS_DEVICE_INCLUSION_FAILURE": "inklusion mislykkedes",
       "STATUS_DEVICE_REPORTING": "rapporterer...",
-      "STATUS_DEVICE_REPORT_SUCCESS": "rapporteret med succes",
-      "STATUS_DEVICE_REPORT_FAILURE": "undlod at rapportere",
-      "EXCLUDED": "udelukket",
+      "STATUS_DEVICE_REPORT_SUCCESS": "succesfuldt rapporteret",
+      "STATUS_DEVICE_REPORT_FAILURE": "rapportering mislykkedes",
+      "EXCLUDED": "ekskluderet",
       "INCLUDED": "inkluderet"
     },
     "firmware_status": "firmware status",
@@ -104,11 +104,11 @@
       "UPLOADING": "uploader...",
       "UPLOAD_COMPLETE": "upload afsluttet",
       "UPLOADING_FAILURE": "kunne ikke uploade",
-      "FLASHING": "blinker...",
-      "FLASHING_COMPLETE": "blinkende fuldført",
-      "FLASHING_FAILURE": "blinkning mislykkedes"
+      "FLASHING": "opdaterer firmware...",
+      "FLASHING_COMPLETE": "opdatering fuldført",
+      "FLASHING_FAILURE": "opdatering mislykkedes"
     },
-    "firmware_upload_progress": "firmware upload fremskridt",
+    "firmware_upload_progress": "firmware upload status",
     "firmware_available_version": "firmware tilgængelig version",
     "status": "$t(dataModel:status)"
   },
@@ -123,40 +123,40 @@
     "name": "$t(dataModel:value) navn",
     "description": "$t(dataModel:networkProperties.description)",
     "type": "$t(dataModel:type)",
-    "period": "periode",
+    "period": "interval",
     "delta": "delta",
     "permission": "tilladelse",
     "permissionOptions": {
       "none": "ingen tilladelse",
-      "r": "Læs kun",
-      "w": "kun skrive",
-      "rw": "Læs og skriv",
+      "r": "Læsbar",
+      "w": "Skrivbar",
+      "rw": "Læs- og skrivbar",
       "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
     },
     "status": "$t(dataModel:status)",
     "statusOptions": {
-      "ok": "Okay",
-      "update": "opdatering",
-      "pending": "verserende"
+      "ok": "Ok",
+      "update": "opdater",
+      "pending": "ventende"
     },
     "dataType": "datatype",
-    "number": "nummer",
+    "number": "tal",
     "numberProperties": {
       "si_conversion": "SI konvertering",
       "unit": "enhed",
-      "min": "minimum antal",
-      "max": "maksimalt antal",
+      "min": "minimumværdi",
+      "max": "maksimumværdi",
       "step": "trinstørrelse",
-      "mapping": "kortlægning",
-      "ordered_mapping": "bestilt kortlægning",
+      "mapping": "kortlagt betydning",
+      "ordered_mapping": "kortlagt betydning i rækkefølge",
       "meaningful_zero": "meningsfuldt nul"
     },
-    "string": "snor",
+    "string": "streng",
     "stringProperties": {
       "encoding": "indkodning",
       "max": "maksimal længde"
     },
-    "blob": "klat",
+    "blob": "datablob",
     "blobProperties": {
       "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
       "max": "$t(dataModel:valueProperties.stringProperties.max)"
@@ -164,11 +164,11 @@
     "xml": "XML",
     "xmlProperties": {
       "xsd": "XSD",
-      "namespace": "navneområde"
+      "namespace": "namespace"
     }
   },
-  "state": "stat",
-  "state_other": "stater",
+  "state": "tilstand",
+  "state_other": "tilstande",
   "stateProperties": {
     "meta": {
       "id": "$t(dataModel:state) $t(dataModel:uuid)",
@@ -184,8 +184,8 @@
     "status": "$t(dataModel:status)",
     "statusOptions": {
       "Send": "sendt",
-      "Pending": "verserende",
-      "Failed": "mislykkedes"
+      "Pending": "venter",
+      "Failed": "mislykket"
     },
     "status_payment": {
       "not_shared": "du har ikke adgang til disse data",
@@ -200,7 +200,7 @@
     "initialReportState": "initial $t(dataModel:stateProperties.reportState)"
   },
   "validation": {
-    "invalidNumber": "ikke et gyldigt nummer",
+    "invalidNumber": "ikke et gyldigt tal",
     "lengthTooLong": "længden bør ikke overstige {{max}} tegn",
     "numberTooSmall": "tallet skal være større end {{number}}",
     "numberTooLarge": "tallet skal være mindre end {{number}}",

@@ -15,7 +15,7 @@
   "changeUserDetailsConfirmation": "Brugeroplysninger er ændret",
   "changeUsername": "skift brugernavn (e-mail)",
   "changeUsernameConfirmation": "Vi har sendt en e-mail med et bekræftelseslink. Følg linket i e-mailen for at bekræfte.",
-  "changeUsernameInfo": "for at ændre dit brugernavn skal du indtaste dine dit nuværende login samt den e-mail-adresse, du vil ændre til.",
+  "changeUsernameInfo": "for at ændre dit brugernavn skal du indtaste dine dit nuværende login samt den e-mail adresse, du vil ændre til.",
   "continue": "fortsæt",
   "createAccount": "opret konto",
   "currentPassword": "nuværende adgangskode",
@@ -26,7 +26,7 @@
   "email": "e-mail",
   "firstName": "fornavn(e)",
   "lastName": "efternavn",
-  "namePlaceholder": "tilføj navn, efternavn",
+  "namePlaceholder": "tilføj navn",
   "newPassword": "ny adgangskode",
   "newUsername": "nyt brugernavn (e-mail)",
   "nickname": "alias",
@@ -51,6 +51,43 @@
   "uuid": "Bruger ID",
   "validation": {
     "repeatPassword": "Kodeordene er ikke ens",
-    "username": "manglende eller ugyldig e-mail"
+    "username": "manglende eller ugyldig e-mail",
+    "invalid": "ugyldig $t(account:{{field}})",
+    "required": "$t(account:{{field}}) er påkrævet",
+    "requiredField": "dette er et obligatorisk felt"
+  },
+  "account": "konto",
+  "goBackToLogin": "gå tilbage til login",
+  "signInUsingEmail": "log ind med e-mail",
+  "signInWithApple": "logge ind med Apple",
+  "logout": "log ud",
+  "rememberMe": "husk mig",
+  "forgotPassword": "glemt kodeord",
+  "forgotPasswordInfo": "Vi sender dig en e-mail med linket til at ændre din adgangskode. Indtast en gyldig e-mailadresse nedenfor.",
+  "forgotPasswordConfirmation": "Vi har sendt dig en e-mail med et bekræftelseslink. Følg linket for at nulstille din adgangskode.",
+  "forgotPasswordButton": "sendt",
+  "recoverPasswordButton": "gem",
+  "registration": "opret en konto",
+  "changeUserDetails": "personlige detaljer",
+  "changeUserDetailsInfo": "Dine personlige oplysninger bruges kun i forbindelse med kundesupport og for at give en bedre brugeroplevelse.",
+  "verifyEmailButton": "bekræft e-mail",
+  "verifyEmailSent": "bekræftelses-e-mail er sendt",
+  "verifyEmailSentInfo": "Vi har sendt dig en e-mail med et bekræftelseslink. Følg linket for at bekræfte din e-mail.",
+  "myID": "mit bruger-id",
+  "verified_email": {
+    "true": "verificeret",
+    "false": "ikke verificeret"
+  },
+  "verification": {
+    "deleteAccount": {
+      "error": "Der opstod en fejl under sletning af din konto. Prøv igen.",
+      "pending": "sletter din konto...",
+      "success": "Din konto er blevet slettet."
+    },
+    "emailConfirmation": {
+      "error": "Der opstod en fejl ved bekræftelse af din e-mailadresse. Prøv igen.",
+      "pending": "bekræfter din e-mail...",
+      "success": "Din e-mail er blevet bekræftet."
+    }
   }
 }
