@@ -20,7 +20,7 @@
   "createAccount": "create an account",
   "currentPassword": "current password",
   "currentUsername": "username (email)",
-  "deleteAccount": "delete an account",
+  "deleteAccount": "delete account",
   "deleteAccountInfo": "you can request your account termination. Once you send the request, we will send you an email with the link. Follow the link to confirm your account deletion.",
   "deleteAccountConfirmation": "We have sent you an email with a confirmation link. Please follow the link in the email to confirm.",
   "email": "contact email",
@@ -80,12 +80,12 @@
   },
   "verification": {
     "deleteAccount": {
-      "error": "An error accured when deleting your account. Please try again.",
+      "error": "An error occurred when deleting your account. Please try again.",
       "pending": "deleting your account...",
       "success": "Your account has been deleted."
     },
     "emailConfirmation": {
-      "error": "An error accured when verifying your email address. Please try again.",
+      "error": "An error occurred when verifying your email address. Please try again.",
       "pending": "verifying your email...",
       "success": "Your email has been verified."
     }
