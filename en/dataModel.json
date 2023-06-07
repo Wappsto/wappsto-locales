@@ -206,4 +206,6 @@
     "numberTooLarge": "the number should be smaller than {{number}}",
     "outsideNumberRange": "the number should be between {{min}} and {{max}}"
   }
+  "file": "file",
+  "file_other": "files",
 }
