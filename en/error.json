@@ -14,6 +14,7 @@
   "134000004": "The device has reported an error.",
   "134000005": "device is unreachable or offline.",
   "134000006": "device is taking too long to respond.",
+  "139000005": "You have reached your monthly device limit. Please upgrade your subscription to proceed.",
   "368000003": "$t(error:generic)",
   "441000001": "You have reached the maximum number of allowed devices.",
   "444000002": "Your account has run out of points.",
