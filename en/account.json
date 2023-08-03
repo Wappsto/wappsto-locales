@@ -5,9 +5,8 @@
     "privacy": "Privacy Notice"
   },
   "acceptTermsWhenSignIn": {
-    "message": "By signing in, you agree to our $t(account:acceptTermsWhenSignIn.terms) and that you have read our $t(account:acceptTermsWhenSignIn.privacy).",
-    "terms": "Terms",
-    "privacy": "Privacy Notice"
+    "message": "By signing in, you agree to our $t(account:acceptTermsWhenSignIn.terms).",
+    "terms": "Terms"
   },
   "changePassword": "change password",
   "changePasswordConfirmation": "Your password has been changed.",

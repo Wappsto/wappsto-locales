@@ -5,9 +5,8 @@
     "privacy": "Privatlivspolitikken"
   },
   "acceptTermsWhenSignIn": {
-    "message": "ved at logge ind accepterer du vores $t(account:acceptTermsWhenSignIn.terms), samt at du har læst vores $t(account:acceptTermsWhenSignIn.privacy).",
-    "terms": "generelle betingelser",
-    "privacy": "privatlivspolitik"
+    "message": "ved at logge ind accepterer du vores $t(account:acceptTermsWhenSignIn.terms).",
+    "terms": "generelle betingelser"
   },
   "changePassword": "skift adgangskode",
   "changePasswordConfirmation": "Din adgangskode er skiftet",
