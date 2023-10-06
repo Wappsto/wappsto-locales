@@ -3,7 +3,7 @@
   "operation": "operator",
   "operationPostPosition": "over",
   "operations": {
-    "none": "$t(log:none)",
+    "none": "ingen",
     "none_short": "rådata",
     "arbitrary": "tilfældigt valgt værdi",
     "arbitrary_short": "tilfældig",
