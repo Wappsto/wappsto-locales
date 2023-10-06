@@ -1,21 +1,7 @@
 {
-  "dynamic": "dynamisk",
-  "static": "statisk",
-  "point": "point",
-  "point_other": "point",
-  "none": "ingen",
-  "emptyData": "data er tom",
-  "liveDataButton": "live",
-  "chartDataType": {
-    "timeBased": "tidsbaseret",
-    "pointBased": "point-baseret",
-    "customDates": "tilpassede datoer"
-  },
-  "dataBased": "databaseret",
-  "custom": "brugerdefineret",
   "aggregation": "aggregering",
   "operation": "operator",
-  "operationPostposition": "over",
+  "operationPostPosition": "over",
   "operations": {
     "none": "$t(log:none)",
     "none_short": "rådata",
@@ -58,24 +44,6 @@
     "lower_quartile": "nederste kvartil",
     "lower_quartile_short": "P25"
   },
-  "lastOptions": {
-    "last": "seneste",
-    "lastX": "seneste $t(log:timeFrame.{{x}})",
-    "lastXTimeFrame": "seneste {{x}} $t(log:timeFrame.{{time}}, {\"count\": {{x}}})",
-    "lastXPoints": "seneste {{x}} punkter",
-    "1H": "1T",
-    "1D": "1D",
-    "1W": "1U",
-    "1M": "1M",
-    "1HY": "6M",
-    "1Y": "1Å"
-  },
-  "infoText": {
-    "groupBy": "grupper efter",
-    "configureAggregation": "For at aggregere data skal du vælge en metode nedenfor.",
-    "configureTime": "konfigurer tid",
-    "configureYScale": "konfigurer Y-aksen"
-  },
   "timeFrame": {
     "microsecond": "mikrosekund",
     "microsecond_other": "mikrosekunder",
@@ -110,21 +78,5 @@
     "year": "år",
     "year_other": "år",
     "year_short": "år"
-  },
-  "error": {
-    "fetch": "Kunne ikke hente historiske data.",
-    "graphError": "Graffejl",
-    "noNumber": "Historiske data understøttes ikke for denne type værdier.",
-    "noData": "Ingen data registreret for denne periode.",
-    "noValueIds": "Ingen værdier fundet.",
-    "noDeviceIds": "Ingen enheder fundet.",
-    "noIdFound": "Objektet har ikke et ID.",
-    "notSupportedType": "GEO-placering understøttes kun for enheder",
-    "missingDevices": "Nogle enheder kunne ikke hentes.",
-    "missingData": "Nogle data kunne ikke hentes.",
-    "valueHasTooManyPoints": "Grænsen er nået. {{value}} har mere end {{points}} datapunkter."
-  },
-  "validation": {
-    "groupByReqiured": "påkrævet"
   }
 }

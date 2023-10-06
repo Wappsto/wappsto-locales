@@ -1,22 +1,7 @@
 {
-  "dynamic": "dynamic",
-  "static": "static",
-  "point": "point",
-  "point_other": "points",
-  "none": "none",
-  "emptyData": "data is empty",
-  "liveDataButton": "live",
-  "chartDataType": {
-    "timeBased": "time-based",
-    "pointBased": "point-based",
-    "customDates": "custom dates"
-  },
-  "dataBased": "data-based",
-  "custom": "custom",
   "aggregation": "aggregation",
   "operation": "operation",
-  "operationPostposition": "by",
-  "operations": {
+  "operationOptions": {
     "none": "$t(log:none)",
     "none_short": "raw",
     "arbitrary": "randomly selected value",
@@ -58,25 +43,7 @@
     "lower_quartile": "lower quartile",
     "lower_quartile_short": "P25"
   },
-  "lastOptions": {
-    "last": "last",
-    "lastX": "last $t(log:timeFrame.{{x}})",
-    "lastXTimeFrame": "last {{x}} $t(log:timeFrame.{{time}}, {\"count\": {{x}}})",
-    "lastXPoints": "last {{x}} points",
-    "1H": "1H",
-    "1D": "1D",
-    "1W": "1W",
-    "1M": "1M",
-    "1HY": "1HY",
-    "1Y": "1Y"
-  },
-  "infoText": {
-    "groupBy": "group by",
-    "configureAggregation": "To aggregate data select a method below. Select 'none' to retrieve raw data.",
-    "configureTime": "configure time",
-    "configureYScale": "configure Y scale"
-  },
-  "timeFrame": {
+  "timeOptions": {
     "microsecond": "microsecond",
     "microsecond_other": "microseconds",
     "microsecond_short": "μs",
@@ -110,21 +77,5 @@
     "year": "year",
     "year_other": "years",
     "year_short": "yr"
-  },
-  "error": {
-    "fetch": "Failed to get historical data.",
-    "graphError": "Graph error",
-    "noNumber": "Historical data is not supported for this type of values.",
-    "noData": "No recorded data for this period of time.",
-    "noValueIds": "No values found.",
-    "noDeviceIds": "No devices found.",
-    "noIdFound": "Item doesn't have an ID.",
-    "notSupportedType": "GEO location is only supported for devices",
-    "missingDevices": "Failed to fetch some devices.",
-    "missingData": "Failed to fetch some data.",
-    "valueHasTooManyPoints": "Limit reached. {{value}} has more than {{points}} data points."
-  },
-  "validation": {
-    "groupByReqiured": "required"
   }
 }
