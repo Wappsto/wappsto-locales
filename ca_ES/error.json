@@ -1,0 +1,48 @@
+{
+    "300054": "L'enllaç de verificació ha caducat.",
+    "300058": "El nom d'usuari no coincideix",
+    "300063": "Contrasenya incorrecta",
+    "300084": "El nom d'usuari o la contrasenya no coincideixen.",
+    "300098": "No tens prou punts per realitzar aquesta acció.",
+    "400006": "No teniu permís per accedir-hi.",
+    "9900007": "Verifiqueu que no sou un robot.",
+    "9900032": "Acció no vàlida",
+    "9900145": "sempre que no es trobi l'UUID.",
+    "9900147": "sempre que l'UUID no existeixi.",
+    "117000000": "$t(error:invalidSession)",
+    "129000004": "el nom d'usuari no coincideix",
+    "134000004": "El dispositiu ha informat d'un error.",
+    "134000005": "el dispositiu no és accessible o està fora de línia.",
+    "134000006": "el dispositiu triga massa a respondre.",
+    "139000005": "Heu assolit el vostre límit mensual de dispositius.",
+    "368000003": "$t(error:generic)",
+    "441000001": "Heu assolit el nombre màxim de dispositius permesos.",
+    "444000002": "El teu compte s'ha quedat sense punts.",
+    "505000021": "S'utilitza un paràmetre de filtre no vàlid: \"{{wrong_value}}'",
+    "internetConnectionLost": "es perd la connexió a Internet",
+    "fileTooBig": "El fitxer és massa gran",
+    "generic": "Alguna cosa ha anat malament.",
+    "noResponse": "alguna cosa ha fallat, verifica que estiguis connectat a Internet",
+    "notImage": "El fitxer no és una imatge",
+    "invalidSession": "la vostra sessió no és vàlida",
+    "statistics": {
+        "fetch": "no s'han pogut obtenir dades"
+    },
+    "status": {
+        "404": "punt final equivocat",
+        "502": "temps d'espera esgotat",
+        "503": "Servei no disponible",
+        "504": "temps d'espera de la passarel·la"
+    },
+    "stream": {
+        "connectionLost": "s'ha perdut la connexió de flux",
+        "code": {
+            "4000": "error del servidor intern",
+            "4001": "sessió no vàlida",
+            "4002": "prohibit",
+            "4003": "falta subscripció",
+            "4004": "aturat",
+            "4005": "no s'ha pogut obrir el WebSocket"
+        }
+    }
+}

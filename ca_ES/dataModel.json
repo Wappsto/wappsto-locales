@@ -1,0 +1,211 @@
+{
+    "uuid": "ID",
+    "timestamp": "marca de temps",
+    "true": "VERITABLE",
+    "false": "FALS",
+    "name": "nom",
+    "version": "versió",
+    "description": "descripció",
+    "product": "producte",
+    "status": "estat",
+    "type": "tipus",
+    "connection": "connexió",
+    "connectionOnline": {
+        "true": "en línia",
+        "false": "desconectat"
+    },
+    "universalMeta": {
+        "id": "$t(dataModel:uuid)",
+        "version": "versió de l'objecte",
+        "iot": "IoT",
+        "virtual": "virtual",
+        "created": "creat",
+        "changed": "canviat",
+        "updated": "actualitzat",
+        "historical": "registres de dades històriques",
+        "historicalOptions": {
+            "true": "activat",
+            "false": "desactivat"
+        },
+        "owner": "propietari",
+        "manufacturer": "fabricant",
+        "geo": "geolocalització",
+        "geoProperties": {
+            "latitude": "latitud",
+            "longitude": "longitud",
+            "display_name": "$t(dataModel:name)",
+            "address": "adreça"
+        }
+    },
+    "network": "dispositiu",
+    "network_other": "dispositius",
+    "networkProperties": {
+        "name": "$t(dataModel:name)",
+        "description": "$t(dataModel:description)",
+        "id": "$t(dataModel:networkProperties.meta.id)",
+        "meta": {
+            "id": "$t(dataModel:uuid)",
+            "product": "$t(dataModel:product)",
+            "connection": "$t(dataModel:network) $t(dataModel:connection)",
+            "connectionOnline": {
+                "true": "$t(dataModel:connectionOnline.true)",
+                "false": "$t(dataModel:connectionOnline.false)"
+            },
+            "daily_limit": "límit diari",
+            "daily_limitProperties": {
+                "point": "punts",
+                "iot_traffic": "Trànsit IoT",
+                "request": "petició",
+                "request_time": "temps de sol·licitud",
+                "dynamic": "dinàmica"
+            },
+            "name_by_user": "$t(dataModel:name)"
+        }
+    },
+    "device": "cosa",
+    "device_other": "coses",
+    "deviceProperties": {
+        "meta": {
+            "id": "$t(dataModel:uuid)",
+            "connection": "$t(dataModel:device) $t(dataModel:connection)",
+            "connectionOnline": {
+                "true": "$t(dataModel:connectionOnline.true)",
+                "false": "$t(dataModel:connectionOnline.false)"
+            },
+            "name_by_user": "$t(dataModel:name)"
+        },
+        "name": "$t(dataModel:name)",
+        "id": "$t(dataModel:deviceProperties.meta.id)",
+        "version": "$t(dataModel:version)",
+        "product": "$t(dataModel:product)",
+        "protocol": "protocol",
+        "serial": "sèrie",
+        "communication": "comunicació",
+        "description": "$t(dataModel:description)",
+        "manufacturer": "fabricant",
+        "control_timeout": "control del temps d'espera",
+        "control_when_offline": "controlable sense connexió",
+        "included": "inclòs",
+        "inclusion_status": "estat d'inclusió",
+        "inclusion_statusOptions": {
+            "STATUS_DEVICE_INCLUDING": "inclusió en curs...",
+            "STATUS_DEVICE_INCLUSION_SUCCESS": "inclusió amb èxit",
+            "STATUS_DEVICE_INCLUSION_FAILURE": "la inclusió ha fallat",
+            "STATUS_DEVICE_REPORTING": "reportant...",
+            "STATUS_DEVICE_REPORT_SUCCESS": "reportat amb èxit",
+            "STATUS_DEVICE_REPORT_FAILURE": "no s'ha pogut reportar",
+            "EXCLUDED": "exclòs",
+            "INCLUDED": "inclòs"
+        },
+        "firmware_status": "estat del firmware",
+        "firmware_statusOptions": {
+            "UP_TO_DATE": "actualitzat",
+            "UPDATE_AVAILABLE": "actualització disponible",
+            "UPLOADING": "carregant...",
+            "UPLOAD_COMPLETE": "càrrega completada",
+            "UPLOADING_FAILURE": "no s'ha pogut carregar",
+            "FLASHING": "carregant firmware...",
+            "FLASHING_COMPLETE": "càrrega completada",
+            "FLASHING_FAILURE": "ha fallat la càrrega"
+        },
+        "firmware_upload_progress": "progrés de càrrega del firmware",
+        "firmware_available_version": "versió de firmware disponible",
+        "status": "$t(dataModel:status)"
+    },
+    "value": "valor",
+    "value_other": "valors",
+    "valueProperties": {
+        "meta": {
+            "id": "$t(dataModel:uuid)",
+            "name_by_user": "$t(dataModel:name)"
+        },
+        "id": "$t(dataModel:valueProperties.meta.id)",
+        "name": "$t(dataModel:name)",
+        "description": "$t(dataModel:networkProperties.description)",
+        "type": "$t(dataModel:type)",
+        "period": "període",
+        "delta": "delta",
+        "permission": "permís",
+        "permissionOptions": {
+            "none": "sense permís",
+            "r": "només lectuea",
+            "w": "només escriptura",
+            "rw": "lectura i escriptura",
+            "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+        },
+        "status": "$t(dataModel:status)",
+        "statusOptions": {
+            "ok": "D'acord",
+            "update": "actualitzar",
+            "pending": "pendents"
+        },
+        "dataType": "tipus de dades",
+        "number": "nombre",
+        "numberProperties": {
+            "si_conversion": "Conversió SI",
+            "unit": "unitat",
+            "min": "nombre mínim",
+            "max": "nombre màxim",
+            "step": "mida del pas",
+            "mapping": "cartografia",
+            "ordered_mapping": "mapeig ordenat",
+            "meaningful_zero": "zero significatiu"
+        },
+        "string": "cadena",
+        "stringProperties": {
+            "encoding": "codificació",
+            "max": "longitud màxima"
+        },
+        "blob": "Blob",
+        "blobProperties": {
+            "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+            "max": "$t(dataModel:valueProperties.stringProperties.max)"
+        },
+        "xml": "XML",
+        "xmlProperties": {
+            "xsd": "XSD",
+            "namespace": "espai per noms"
+        }
+    },
+    "state": "estat",
+    "state_other": "estats",
+    "stateProperties": {
+        "meta": {
+            "id": "$t(dataModel:uuid)",
+            "name_by_user": "$t(dataModel:name)"
+        },
+        "id": "$t(dataModel:stateProperties.meta.id)",
+        "data": "dades",
+        "type": "$t(dataModel:type)",
+        "typeOptions": {
+            "Report": "actual",
+            "Control": "desitjat"
+        },
+        "status": "$t(dataModel:status)",
+        "statusOptions": {
+            "Send": "enviat",
+            "Pending": "pendents",
+            "Failed": "fallat"
+        },
+        "status_payment": {
+            "not_shared": "no teniu accés a aquestes dades",
+            "not_paid": "no heu pagat per accedir a aquestes dades",
+            "no_points": "Actualitza la teva subscripció per veure aquestes dades"
+        },
+        "timestamp": "$t(dataModel:timestamp)",
+        "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+        "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+        "initialState": "inicial $t(dataModel:state) dades",
+        "initialControlState": "inicial $t(dataModel:stateProperties.controlState)",
+        "initialReportState": "inicial $t(dataModel:stateProperties.reportState)"
+    },
+    "validation": {
+        "invalidNumber": "no és un número vàlid",
+        "lengthTooLong": "la longitud no ha de superar {{max}} caràcters",
+        "numberTooSmall": "el nombre hauria de ser més gran que {{number}}",
+        "numberTooLarge": "el nombre hauria de ser menor que {{number}}",
+        "outsideNumberRange": "el nombre hauria d'estar entre {{min}} i {{max}}"
+    },
+    "file": "Fitxer",
+    "file_other": "Fitxers"
+}
