@@ -1,8 +1,7 @@
 {
   "aggregation": "aggregering",
   "operation": "operator",
-  "operationPostPosition": "over",
-  "operations": {
+  "operationOptions": {
     "none": "ingen",
     "none_short": "rådata",
     "arbitrary": "tilfældigt valgt værdi",
@@ -44,7 +43,7 @@
     "lower_quartile": "nederste kvartil",
     "lower_quartile_short": "P25"
   },
-  "timeFrame": {
+  "timeOptions": {
     "microsecond": "mikrosekund",
     "microsecond_other": "mikrosekunder",
     "microsecond_short": "μs",
