@@ -1,0 +1,49 @@
+{
+  "300054": "Il collegamento di verifica è scaduto.",
+  "300058": "Il nome utente non corrisponde",
+  "300063": "Password errata",
+  "300084": "Il nome utente o la password non corrispondono.",
+  "300098": "Non hai abbastanza punti per eseguire questa azione.",
+  "400006": "Non hai l'autorizzazione per accedere a questo.",
+  "400017": "Non puoi modificare le autorizzazioni",
+  "9900007": "Verifica di non essere un robot.",
+  "9900032": "Azione non valida",
+  "9900145": "a condizione che l'UUID non venga trovato.",
+  "9900147": "a condizione che l'UUID non esista.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "il nome utente non corrisponde",
+  "134000004": "Il dispositivo ha segnalato un errore.",
+  "134000005": "il dispositivo è irraggiungibile o offline.",
+  "134000006": "il dispositivo impiega troppo tempo per rispondere.",
+  "139000005": "Hai raggiunto il limite mensile di dispositivi. ",
+  "368000003": "$t(error:generic)",
+  "441000001": "Hai raggiunto il numero massimo di dispositivi consentiti.",
+  "444000002": "Il tuo account ha esaurito i punti.",
+  "505000021": "È stato utilizzato un parametro di filtro non valido: '{{wrong_value}}'",
+  "internetConnectionLost": "la connessione Internet viene persa",
+  "fileTooBig": "Il file è troppo grande",
+  "generic": "Qualcosa è andato storto.",
+  "noResponse": "qualcosa è andato storto, verifica di essere connesso a Internet",
+  "notImage": "Il file non è un'immagine",
+  "invalidSession": "la tua sessione non è valida",
+  "statistics": {
+    "fetch": "non è riuscito a ottenere i dati"
+  },
+  "status": {
+    "404": "punto finale sbagliato",
+    "502": "richiedere il timeout",
+    "503": "Servizio non disponibile",
+    "504": "timeout del gateway"
+  },
+  "stream": {
+    "connectionLost": "la connessione allo streaming viene persa",
+    "code": {
+      "4000": "Errore interno del server",
+      "4001": "sessione non valida",
+      "4002": "vietato",
+      "4003": "abbonamento mancante",
+      "4004": "fermato",
+      "4005": "impossibile aprire WebSocket"
+    }
+  }
+}

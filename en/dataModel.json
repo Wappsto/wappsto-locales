@@ -135,7 +135,7 @@
     },
     "status": "$t(dataModel:status)",
     "statusOptions": {
-      "ok": "ok",
+      "ok": "OK",
       "update": "update",
       "pending": "pending"
     },

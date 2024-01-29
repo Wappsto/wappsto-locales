@@ -1,0 +1,49 @@
+{
+  "300054": "O link de verificação expirou.",
+  "300058": "O nome de usuário não corresponde",
+  "300063": "Senha incorreta",
+  "300084": "O nome de usuário ou a senha não coincidem.",
+  "300098": "Você não tem pontos suficientes para realizar esta ação.",
+  "400006": "Você não tem permissão para acessar isso.",
+  "400017": "Você não pode alterar as permissões",
+  "9900007": "Verifique se você não é um robô.",
+  "9900032": "Ação inválida",
+  "9900145": "desde que o UUID não seja encontrado.",
+  "9900147": "desde que o UUID não exista.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "nome de usuário não corresponde",
+  "134000004": "O dispositivo relatou um erro.",
+  "134000005": "o dispositivo está inacessível ou off-line.",
+  "134000006": "dispositivo está demorando muito para responder.",
+  "139000005": "Você atingiu seu limite mensal de dispositivos. ",
+  "368000003": "$t(error:generic)",
+  "441000001": "Você atingiu o número máximo de dispositivos permitidos.",
+  "444000002": "Sua conta ficou sem pontos.",
+  "505000021": "Parâmetro de filtro inválido é usado: '{{wrong_value}}'",
+  "internetConnectionLost": "a conexão com a internet foi perdida",
+  "fileTooBig": "O arquivo é muito grande",
+  "generic": "Algo deu errado.",
+  "noResponse": "algo deu errado, verifique se você está conectado à Internet",
+  "notImage": "O arquivo não é uma imagem",
+  "invalidSession": "sua sessão é inválida",
+  "statistics": {
+    "fetch": "não foi possível obter dados"
+  },
+  "status": {
+    "404": "ponto final errado",
+    "502": "solicitar tempo limite",
+    "503": "Serviço não disponível",
+    "504": "tempo limite do gateway"
+  },
+  "stream": {
+    "connectionLost": "a conexão do stream foi perdida",
+    "code": {
+      "4000": "Erro do Servidor Interno",
+      "4001": "sessão não válida",
+      "4002": "proibido",
+      "4003": "assinatura perdida",
+      "4004": "parou",
+      "4005": "falha ao abrir o WebSocket"
+    }
+  }
+}

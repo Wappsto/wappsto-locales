@@ -1,0 +1,49 @@
+{
+  "300054": "Le lien de vérification a expiré.",
+  "300058": "Le nom d'utilisateur ne correspond pas",
+  "300063": "Mauvais mot de passe",
+  "300084": "Le nom d'utilisateur ou le mot de passe ne correspondent pas.",
+  "300098": "Vous n'avez pas assez de points pour effectuer cette action.",
+  "400006": "Vous n'êtes pas autorisé à y accéder.",
+  "400017": "Vous ne pouvez pas modifier les autorisations",
+  "9900007": "Veuillez vérifier que vous n'êtes pas un robot.",
+  "9900032": "Action invalide",
+  "9900145": "à condition que l'UUID ne soit pas trouvé.",
+  "9900147": "à condition que l'UUID n'existe pas.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "le nom d'utilisateur ne correspond pas",
+  "134000004": "L'appareil a signalé une erreur.",
+  "134000005": "l'appareil est inaccessible ou hors ligne.",
+  "134000006": "l'appareil met trop de temps à répondre.",
+  "139000005": "Vous avez atteint votre limite mensuelle d'appareils. ",
+  "368000003": "$t(error:generic)",
+  "441000001": "Vous avez atteint le nombre maximum d'appareils autorisés.",
+  "444000002": "Votre compte est à court de points.",
+  "505000021": "Un paramètre de filtre non valide est utilisé : '{{wrong_value}}'",
+  "internetConnectionLost": "la connexion Internet est perdue",
+  "fileTooBig": "Le fichier est trop gros",
+  "generic": "Quelque chose s'est mal passé.",
+  "noResponse": "quelque chose s'est mal passé, veuillez vérifier que vous êtes connecté à Internet",
+  "notImage": "Le fichier n'est pas une image",
+  "invalidSession": "votre session n'est pas valide",
+  "statistics": {
+    "fetch": "n'a pas réussi à obtenir des données"
+  },
+  "status": {
+    "404": "mauvais point de terminaison",
+    "502": "délai d'attente de la demande",
+    "503": "service non disponible",
+    "504": "délai d'expiration de la passerelle"
+  },
+  "stream": {
+    "connectionLost": "la connexion au flux est perdue",
+    "code": {
+      "4000": "Erreur interne du serveur",
+      "4001": "séance non valide",
+      "4002": "interdit",
+      "4003": "abonnement manquant",
+      "4004": "arrêté",
+      "4005": "n'a pas réussi à ouvrir WebSocket"
+    }
+  }
+}

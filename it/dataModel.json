@@ -1,0 +1,224 @@
+{
+  "uuid": "ID",
+  "timestamp": "timestamp",
+  "true": "VERO",
+  "false": "falso",
+  "name": "nome",
+  "version": "versione",
+  "description": "descrizione",
+  "product": "Prodotto",
+  "status": "stato",
+  "type": "tipo",
+  "connection": "connessione",
+  "connectionOnline": {
+    "true": "in linea",
+    "false": "disconnesso"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "versione dell'oggetto",
+    "iot": "IoT",
+    "virtual": "virtuale",
+    "created": "creato",
+    "changed": "cambiato",
+    "updated": "aggiornato",
+    "historical": "registri di dati storici",
+    "historicalOptions": {
+      "true": "abilitato",
+      "false": "Disabilitato"
+    },
+    "owner": "proprietario",
+    "manufacturer": "produttore",
+    "geo": "geolocalizzazione",
+    "geoProperties": {
+      "latitude": "latitudine",
+      "longitude": "longitudine",
+      "display_name": "nome",
+      "address": "indirizzo"
+    }
+  },
+  "network": "dispositivo",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "limite giornaliero",
+      "daily_limitProperties": {
+        "point": "punti",
+        "iot_traffic": "Traffico IoT",
+        "request": "richiesta",
+        "request_time": "richiedere l'orario",
+        "dynamic": "dinamico"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "cosa",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protocollo",
+    "serial": "seriale",
+    "communication": "comunicazione",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "produttore",
+    "control_timeout": "timeout del controllo",
+    "control_when_offline": "controllabile mentre offline",
+    "included": "incluso",
+    "inclusion_status": "stato di inclusione",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "inserimento in corso...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "inclusione riuscita",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "l'inclusione non è riuscita",
+      "STATUS_DEVICE_REPORTING": "segnalazione...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "segnalato con successo",
+      "STATUS_DEVICE_REPORT_FAILURE": "non è riuscito a riferire",
+      "EXCLUDED": "escluso",
+      "INCLUDED": "incluso"
+    },
+    "firmware_status": "stato del firmware",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "aggiornato",
+      "UPDATE_AVAILABLE": "aggiornamento disponibile",
+      "UPLOADING": "caricamento...",
+      "UPLOAD_COMPLETE": "caricamento completato",
+      "UPLOADING_FAILURE": "caricamento non riuscito",
+      "FLASHING": "lampeggiante...",
+      "FLASHING_COMPLETE": "lampeggiamento completato",
+      "FLASHING_FAILURE": "il lampeggio non è riuscito"
+    },
+    "firmware_upload_progress": "avanzamento del caricamento del firmware",
+    "firmware_available_version": "versione firmware disponibile",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "valore",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) nome",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "periodo",
+    "delta": "delta",
+    "permission": "autorizzazione",
+    "permissionOptions": {
+      "none": "nessun permesso",
+      "r": "sola lettura",
+      "w": "scrivi solo",
+      "rw": "leggere e scrivere",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "aggiornamento",
+      "pending": "in attesa di"
+    },
+    "dataType": "tipo di dati",
+    "number": "numero",
+    "numberProperties": {
+      "si_conversion": "Conversione SI",
+      "unit": "unità",
+      "min": "numero minimo",
+      "max": "numero massimo",
+      "step": "dimensione del passo",
+      "mapping": "Mappatura",
+      "ordered_mapping": "mappatura ordinata",
+      "meaningful_zero": "zero significativo",
+      "meaningful_one": "zero significativo",
+      "meaningful_many": "zero significativo",
+      "meaningful_other": "zero significativo"
+    },
+    "string": "corda",
+    "stringProperties": {
+      "encoding": "codifica",
+      "max": "lunghezza massima"
+    },
+    "blob": "macchia",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "spazio dei nomi"
+    }
+  },
+  "state": "stato",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "dati",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "attuale",
+      "Control": "desiderato"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "inviato",
+      "Pending": "in attesa di",
+      "Failed": "fallito"
+    },
+    "status_payment": {
+      "not_shared": "non hai accesso a questi dati",
+      "not_paid": "non hai pagato per accedere a questi dati",
+      "no_points": "Aggiorna il tuo abbonamento per visualizzare questi dati"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "iniziale $t(dataModel:state) dati",
+    "initialControlState": "iniziale $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "iniziale $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "non è un numero valido",
+    "lengthTooLong": "la lunghezza non deve superare {{max}} caratteri",
+    "numberTooSmall": "il numero dovrebbe essere maggiore di {{number}}",
+    "numberTooLarge": "il numero dovrebbe essere inferiore a {{number}}",
+    "outsideNumberRange": "il numero dovrebbe essere compreso tra {{min}} E {{max}}"
+  },
+  "file": "file",
+  "network_one": "dispositivo",
+  "network_many": "dispositivi",
+  "network_other": "dispositivi",
+  "device_one": "cosa",
+  "device_many": "cose",
+  "device_other": "cose",
+  "value_one": "valore",
+  "value_many": "valori",
+  "value_other": "valori",
+  "state_one": "stato",
+  "state_many": "stati",
+  "state_other": "stati",
+  "file_one": "file",
+  "file_many": "File",
+  "file_other": "File"
+}

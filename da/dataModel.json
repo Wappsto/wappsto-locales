@@ -135,7 +135,7 @@
     },
     "status": "$t(dataModel:status)",
     "statusOptions": {
-      "ok": "Ok",
+      "ok": "OK",
       "update": "opdater",
       "pending": "ventende"
     },
@@ -184,7 +184,7 @@
     "status": "$t(dataModel:status)",
     "statusOptions": {
       "Send": "sendt",
-      "Pending": "venter",
+      "Pending": "afventer",
       "Failed": "mislykket"
     },
     "status_payment": {
