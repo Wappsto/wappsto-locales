@@ -4,6 +4,7 @@
   "true": "vrai",
   "false": "FAUX",
   "name": "nom",
+  "originalName": "nom d'origine",
   "version": "version",
   "description": "description",
   "product": "produit",
@@ -38,6 +39,7 @@
     }
   },
   "network": "appareil",
+  "network_other": "dispositifs",
   "networkProperties": {
     "name": "$t(dataModel:name)",
     "description": "$t(dataModel:description)",
@@ -62,6 +64,7 @@
     }
   },
   "device": "chose",
+  "device_other": "des choses",
   "deviceProperties": {
     "meta": {
       "id": "$t(dataModel:device) $t(dataModel:uuid)",
@@ -111,6 +114,7 @@
     "status": "$t(dataModel:status)"
   },
   "value": "valeur",
+  "value_other": "valeurs",
   "valueProperties": {
     "meta": {
       "id": "$t(dataModel:value) $t(dataModel:uuid)",
@@ -146,10 +150,7 @@
       "step": "taille de pas",
       "mapping": "cartographie",
       "ordered_mapping": "cartographie ordonnée",
-      "meaningful_zero": "zéro significatif",
-      "meaningful_one": "zéro significatif",
-      "meaningful_many": "zéro significatif",
-      "meaningful_other": "zéro significatif"
+      "meaningful_zero": "zéro significatif"
     },
     "string": "chaîne",
     "stringProperties": {
@@ -168,6 +169,7 @@
     }
   },
   "state": "État",
+  "state_other": "États",
   "stateProperties": {
     "meta": {
       "id": "$t(dataModel:state) $t(dataModel:uuid)",
@@ -206,19 +208,5 @@
     "outsideNumberRange": "le nombre doit être compris entre {{min}} et {{max}}"
   },
   "file": "déposer",
-  "network_one": "appareil",
-  "network_many": "dispositifs",
-  "network_other": "dispositifs",
-  "device_one": "chose",
-  "device_many": "des choses",
-  "device_other": "des choses",
-  "value_one": "valeur",
-  "value_many": "valeurs",
-  "value_other": "valeurs",
-  "state_one": "État",
-  "state_many": "États",
-  "state_other": "États",
-  "file_one": "déposer",
-  "file_many": "des dossiers",
   "file_other": "des dossiers"
 }

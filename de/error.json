@@ -1,48 +1,49 @@
 {
-    "300054": "Der Bestätigungslink ist abgelaufen.",
-    "300058": "Der Benutzername stimmt nicht überein",
-    "300063": "Falsches Passwort",
-    "300084": "Benutzername oder Passwort stimmen nicht überein.",
-    "300098": "Sie haben nicht genügend Punkte, um diese Aktion auszuführen.",
-    "400006": "Sie haben keine Berechtigung, darauf zuzugreifen.",
-    "9900007": "Bitte stellen Sie sicher, dass Sie kein Roboter sind.",
-    "9900032": "Ungültige Aktion",
-    "9900145": "Das IoT-Gerät mit der gegebenen UUID wurde nicht gefunden.",
-    "9900147": "Das IoT-Gerät mit der gegebenen UUID gibt es nicht.",
-    "117000000": "$t(error:invalidSession)",
-    "129000004": "Benutzername stimmt nicht überein",
-    "134000004": "Das Gerät hat einen Fehler gemeldet.",
-    "134000005": "Das Gerät ist nicht erreichbar oder offline.",
-    "134000006": "Das Gerät braucht zu lange, um zu antworten.",
-    "139000005": "Sie haben Ihr monatliches Gerätelimit erreicht. Bitte erweitern Sie Ihr Abo.",
-    "368000003": "$t(error:generic)",
-    "441000001": "Sie haben die maximale Anzahl zulässiger Geräte erreicht.",
-    "444000002": "Ihr Konto hat keine Punkte mehr.",
-    "505000021": "Es wird ein ungültiger Filterparameter verwendet: '{{wrong_value}}'",
-    "internetConnectionLost": "Die Internetverbindung ist verloren",
-    "fileTooBig": "Die Datei ist zu groß",
-    "generic": "Etwas ist schief gelaufen.",
-    "noResponse": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie, ob Sie mit dem Internet verbunden sind",
-    "notImage": "Die Datei ist kein Bild",
-    "invalidSession": "Ihre Sitzung ist ungültig",
-    "statistics": {
-        "fetch": "Es konnten keine Daten abgerufen werden"
-    },
-    "status": {
-        "404": "falscher Endpunkt",
-        "502": "Zeitüberschreitung der Anforderung",
-        "503": "Dienst nicht verfügbar",
-        "504": "Gateway-Timeout"
-    },
-    "stream": {
-        "connectionLost": "Die Stream-Verbindung ist verloren",
-        "code": {
-            "4000": "interner Serverfehler",
-            "4001": "Sitzung ungültig",
-            "4002": "verboten",
-            "4003": "fehlendes Abonnement",
-            "4004": "gestoppt",
-            "4005": "WebSocket konnte nicht geöffnet werden"
-        }
+  "300054": "Der Bestätigungslink ist abgelaufen.",
+  "300058": "Der Benutzername stimmt nicht überein",
+  "300063": "Falsches Passwort",
+  "300084": "Benutzername oder Passwort stimmen nicht überein.",
+  "300098": "Sie haben nicht genügend Punkte, um diese Aktion auszuführen.",
+  "400006": "Sie haben keine Berechtigung, darauf zuzugreifen.",
+  "400017": "Sie können Berechtigungen nicht ändern",
+  "9900007": "Bitte stellen Sie sicher, dass Sie kein Roboter sind.",
+  "9900032": "Ungültige Aktion",
+  "9900145": "Das IoT-Gerät mit der gegebenen UUID wurde nicht gefunden.",
+  "9900147": "Das IoT-Gerät mit der gegebenen UUID gibt es nicht.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "Benutzername stimmt nicht überein",
+  "134000004": "Das Gerät hat einen Fehler gemeldet.",
+  "134000005": "Das Gerät ist nicht erreichbar oder offline.",
+  "134000006": "Das Gerät braucht zu lange, um zu antworten.",
+  "139000005": "Sie haben Ihr monatliches Gerätelimit erreicht. Bitte erweitern Sie Ihr Abo.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Sie haben die maximale Anzahl zulässiger Geräte erreicht.",
+  "444000002": "Ihr Konto hat keine Punkte mehr.",
+  "505000021": "Es wird ein ungültiger Filterparameter verwendet: '{{wrong_value}}'",
+  "internetConnectionLost": "Die Internetverbindung ist verloren",
+  "fileTooBig": "Die Datei ist zu groß",
+  "generic": "Etwas ist schief gelaufen.",
+  "noResponse": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie, ob Sie mit dem Internet verbunden sind",
+  "notImage": "Die Datei ist kein Bild",
+  "invalidSession": "Ihre Sitzung ist ungültig",
+  "statistics": {
+    "fetch": "Es konnten keine Daten abgerufen werden"
+  },
+  "status": {
+    "404": "falscher Endpunkt",
+    "502": "Zeitüberschreitung der Anforderung",
+    "503": "Dienst nicht verfügbar",
+    "504": "Gateway-Timeout"
+  },
+  "stream": {
+    "connectionLost": "Die Stream-Verbindung ist verloren",
+    "code": {
+      "4000": "interner Serverfehler",
+      "4001": "Sitzung ungültig",
+      "4002": "verboten",
+      "4003": "fehlendes Abonnement",
+      "4004": "gestoppt",
+      "4005": "WebSocket konnte nicht geöffnet werden"
     }
+  }
 }

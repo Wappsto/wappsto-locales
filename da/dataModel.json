@@ -4,6 +4,7 @@
   "true": "SAND",
   "false": "FALSK",
   "name": "navn",
+  "originalName": "oprindelige navn",
   "version": "version",
   "description": "beskrivelse",
   "product": "produkt",
@@ -205,5 +206,7 @@
     "numberTooSmall": "tallet skal være større end {{number}}",
     "numberTooLarge": "tallet skal være mindre end {{number}}",
     "outsideNumberRange": "tallet skal være mellem {{min}} og {{max}}"
-  }
+  },
+  "file": "fil",
+  "file_other": "filer"
 }

@@ -1,48 +1,49 @@
 {
-    "300054": "El enlace de verificación ha caducado.",
-    "300058": "El nombre de usuario no coincide",
-    "300063": "Contraseña incorrecta",
-    "300084": "El nombre de usuario o la contraseña no coinciden.",
-    "300098": "No tienes suficientes puntos para realizar esta acción.",
-    "400006": "No tienes permiso para acceder a esto.",
-    "9900007": "Verifica que no eres un robot.",
-    "9900032": "Acción no válida",
-    "9900145": "siempre que no se encuentre el UUID.",
-    "9900147": "siempre que el UUID no exista.",
-    "117000000": "$t(error:invalidSession)",
-    "129000004": "nombre de usuario no coincide",
-    "134000004": "El dispositivo ha informado de un error.",
-    "134000005": "el dispositivo no está disponible o está desconectado.",
-    "134000006": "el dispositivo está tardando demasiado en responder.",
-    "139000005": "Ha alcanzado su límite mensual de dispositivos.",
-    "368000003": "$t(error:generic)",
-    "441000001": "Ha alcanzado el número máximo de dispositivos permitidos.",
-    "444000002": "Su cuenta se ha quedado sin puntos.",
-    "505000021": "Se utiliza un parámetro de filtro no válido: '{{wrong_value}}'",
-    "internetConnectionLost": "se pierde la conexion a internet",
-    "fileTooBig": "el archivo es demasiado grande",
-    "generic": "Algo salió mal.",
-    "noResponse": "algo salió mal, por favor verifica que estés conectado a internet",
-    "notImage": "El archivo no es una imagen.",
-    "invalidSession": "tu sesión no es válida",
-    "statistics": {
-        "fetch": "no se pudo obtener datos"
-    },
-    "status": {
-        "404": "punto final incorrecto",
-        "502": "tiempo de espera agotado",
-        "503": "Servicio No Disponible",
-        "504": "tiempo de espera de la puerta de enlace"
-    },
-    "stream": {
-        "connectionLost": "se perdió la conexión de transmisión",
-        "code": {
-            "4000": "Error Interno del Servidor",
-            "4001": "sesión no válida",
-            "4002": "prohibido",
-            "4003": "suscripción faltante",
-            "4004": "parado",
-            "4005": "no se pudo abrir WebSocket"
-        }
+  "300054": "El enlace de verificación ha caducado.",
+  "300058": "El nombre de usuario no coincide",
+  "300063": "Contraseña incorrecta",
+  "300084": "El nombre de usuario o la contraseña no coinciden.",
+  "300098": "No tienes suficientes puntos para realizar esta acción.",
+  "400006": "No tienes permiso para acceder a esto.",
+  "400017": "No puedes cambiar los permisos",
+  "9900007": "Verifica que no eres un robot.",
+  "9900032": "Acción no válida",
+  "9900145": "siempre que no se encuentre el UUID.",
+  "9900147": "siempre que el UUID no exista.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "nombre de usuario no coincide",
+  "134000004": "El dispositivo ha informado de un error.",
+  "134000005": "el dispositivo no está disponible o está desconectado.",
+  "134000006": "el dispositivo está tardando demasiado en responder.",
+  "139000005": "Ha alcanzado su límite mensual de dispositivos.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Ha alcanzado el número máximo de dispositivos permitidos.",
+  "444000002": "Su cuenta se ha quedado sin puntos.",
+  "505000021": "Se utiliza un parámetro de filtro no válido: '{{wrong_value}}'",
+  "internetConnectionLost": "se pierde la conexion a internet",
+  "fileTooBig": "el archivo es demasiado grande",
+  "generic": "Algo salió mal.",
+  "noResponse": "algo salió mal, por favor verifica que estés conectado a internet",
+  "notImage": "El archivo no es una imagen.",
+  "invalidSession": "tu sesión no es válida",
+  "statistics": {
+    "fetch": "no se pudo obtener datos"
+  },
+  "status": {
+    "404": "punto final incorrecto",
+    "502": "tiempo de espera agotado",
+    "503": "Servicio No Disponible",
+    "504": "tiempo de espera de la puerta de enlace"
+  },
+  "stream": {
+    "connectionLost": "se perdió la conexión de transmisión",
+    "code": {
+      "4000": "Error Interno del Servidor",
+      "4001": "sesión no válida",
+      "4002": "prohibido",
+      "4003": "suscripción faltante",
+      "4004": "parado",
+      "4005": "no se pudo abrir WebSocket"
     }
+  }
 }

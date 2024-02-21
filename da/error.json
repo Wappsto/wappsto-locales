@@ -5,6 +5,7 @@
   "300084": "brugernavn eller adgangskode stemmer ikke overens.",
   "300098": "Du har ikke nok point til at udføre denne handling.",
   "400006": "du har ikke tilladelse til at få adgang til dette.",
+  "400017": "Du kan ikke ændre tilladelser",
   "9900007": "Bekræft venligst, at du ikke er en robot.",
   "9900032": "ugyldig handling",
   "9900145": "IoT-enheden med det givne UUID blev ikke fundet",
@@ -14,6 +15,7 @@
   "134000004": "Enheden har rapporteret en fejl.",
   "134000005": "enheden er utilgængelig eller offline.",
   "134000006": "enheden tager for lang tid om at svare.",
+  "139000005": "Du har nået din månedlige enhedsgrænse. Opgrader venligst dit abonnement for at fortsætte.",
   "368000003": "$t(error:generic)",
   "441000001": "Du har nået det maksimale antal tilladte enheder.",
   "444000002": "Din konto er løbet tør for point.",
@@ -30,7 +32,8 @@
   "status": {
     "404": "forkert endpoint",
     "502": "forespørgsel timede ud",
-    "503": "service ikke tilgængelig"
+    "503": "service ikke tilgængelig",
+    "504": "Gateway Time-out"
   },
   "stream": {
     "connectionLost": "ingen stream forbindelse",

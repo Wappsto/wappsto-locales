@@ -4,6 +4,7 @@
   "true": "true",
   "false": "false",
   "name": "name",
+  "originalName": "original name",
   "version": "version",
   "description": "description",
   "product": "product",

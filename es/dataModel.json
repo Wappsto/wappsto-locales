@@ -4,6 +4,7 @@
   "true": "VERDADERO",
   "false": "FALSO",
   "name": "nombre",
+  "originalName": "nombre original",
   "version": "versión",
   "description": "descripción",
   "product": "producto",

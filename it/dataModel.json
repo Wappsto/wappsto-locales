@@ -4,6 +4,7 @@
   "true": "VERO",
   "false": "falso",
   "name": "nome",
+  "originalName": "Nome originale",
   "version": "versione",
   "description": "descrizione",
   "product": "Prodotto",
@@ -38,6 +39,7 @@
     }
   },
   "network": "dispositivo",
+  "network_other": "dispositivi",
   "networkProperties": {
     "name": "$t(dataModel:name)",
     "description": "$t(dataModel:description)",
@@ -62,6 +64,7 @@
     }
   },
   "device": "cosa",
+  "device_other": "cose",
   "deviceProperties": {
     "meta": {
       "id": "$t(dataModel:device) $t(dataModel:uuid)",
@@ -111,6 +114,7 @@
     "status": "$t(dataModel:status)"
   },
   "value": "valore",
+  "value_other": "valori",
   "valueProperties": {
     "meta": {
       "id": "$t(dataModel:value) $t(dataModel:uuid)",
@@ -146,10 +150,7 @@
       "step": "dimensione del passo",
       "mapping": "Mappatura",
       "ordered_mapping": "mappatura ordinata",
-      "meaningful_zero": "zero significativo",
-      "meaningful_one": "zero significativo",
-      "meaningful_many": "zero significativo",
-      "meaningful_other": "zero significativo"
+      "meaningful_zero": "zero significativo"
     },
     "string": "corda",
     "stringProperties": {
@@ -168,6 +169,7 @@
     }
   },
   "state": "stato",
+  "state_other": "stati",
   "stateProperties": {
     "meta": {
       "id": "$t(dataModel:state) $t(dataModel:uuid)",
@@ -206,19 +208,5 @@
     "outsideNumberRange": "il numero dovrebbe essere compreso tra {{min}} E {{max}}"
   },
   "file": "file",
-  "network_one": "dispositivo",
-  "network_many": "dispositivi",
-  "network_other": "dispositivi",
-  "device_one": "cosa",
-  "device_many": "cose",
-  "device_other": "cose",
-  "value_one": "valore",
-  "value_many": "valori",
-  "value_other": "valori",
-  "state_one": "stato",
-  "state_many": "stati",
-  "state_other": "stati",
-  "file_one": "file",
-  "file_many": "File",
   "file_other": "File"
 }
