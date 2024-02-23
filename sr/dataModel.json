@@ -1,0 +1,212 @@
+{
+  "uuid": "ИД",
+  "timestamp": "временска ознака",
+  "true": "истина",
+  "false": "лажно",
+  "name": "име",
+  "originalName": "оригинално име",
+  "version": "верзија",
+  "description": "Опис",
+  "product": "производ",
+  "status": "статус",
+  "type": "тип",
+  "connection": "везу",
+  "connectionOnline": {
+    "true": "онлајн",
+    "false": "одсутан"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "верзија објекта",
+    "iot": "ИоТ",
+    "virtual": "виртуелни",
+    "created": "створио",
+    "changed": "промењено",
+    "updated": "ажуриран",
+    "historical": "евиденције историјских података",
+    "historicalOptions": {
+      "true": "омогућено",
+      "false": "онеспособљени"
+    },
+    "owner": "власник",
+    "manufacturer": "произвођач",
+    "geo": "геолокација",
+    "geoProperties": {
+      "latitude": "географска ширина",
+      "longitude": "географска дужина",
+      "display_name": "име",
+      "address": "адреса"
+    }
+  },
+  "network": "уређај",
+  "network_other": "уређаја",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "дневни лимит",
+      "daily_limitProperties": {
+        "point": "бодова",
+        "iot_traffic": "ИоТ саобраћај",
+        "request": "захтев",
+        "request_time": "захтева време",
+        "dynamic": "динамичан"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "ствар",
+  "device_other": "ствари",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "протокола",
+    "serial": "серијски",
+    "communication": "комуникација",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "произвођач",
+    "control_timeout": "временско ограничење контроле",
+    "control_when_offline": "контролисати док сте ван мреже",
+    "included": "укључено",
+    "inclusion_status": "статус инклузије",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "укључивање у току...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "укључивање успешно",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "укључивање није успело",
+      "STATUS_DEVICE_REPORTING": "извештавање...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "успешно пријављен",
+      "STATUS_DEVICE_REPORT_FAILURE": "није успео да пријави",
+      "EXCLUDED": "искључено",
+      "INCLUDED": "укључено"
+    },
+    "firmware_status": "статус фирмвера",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "савремен",
+      "UPDATE_AVAILABLE": "располагању новија верзија",
+      "UPLOADING": "отпремање...",
+      "UPLOAD_COMPLETE": "отпремање је завршено",
+      "UPLOADING_FAILURE": "отпремање није успело",
+      "FLASHING": "трепери...",
+      "FLASHING_COMPLETE": "трептање је завршено",
+      "FLASHING_FAILURE": "трептање није успело"
+    },
+    "firmware_upload_progress": "напредак учитавања фирмвера",
+    "firmware_available_version": "доступна верзија фирмвера",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "вредност",
+  "value_other": "вредности",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) име",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "раздобље",
+    "delta": "делта",
+    "permission": "дозволу",
+    "permissionOptions": {
+      "none": "нема дозволу",
+      "r": "само за читање",
+      "w": "само писати",
+      "rw": "читају и пишу",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "У реду",
+      "update": "ажурирање",
+      "pending": "нерешен"
+    },
+    "dataType": "тип података",
+    "number": "број",
+    "numberProperties": {
+      "si_conversion": "СИ конверзија",
+      "unit": "јединица",
+      "min": "минимални број",
+      "max": "максималан број",
+      "step": "величина корака",
+      "mapping": "мапирање",
+      "ordered_mapping": "наређено пресликавање",
+      "meaningful_zero": "смислена нула"
+    },
+    "string": "низ",
+    "stringProperties": {
+      "encoding": "кодирање",
+      "max": "максимална дужина"
+    },
+    "blob": "блоб",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "КСМЛ",
+    "xmlProperties": {
+      "xsd": "КССД",
+      "namespace": "именског простора"
+    }
+  },
+  "state": "држава",
+  "state_other": "државе",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "података",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "Тренутни",
+      "Control": "жељени"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "послао",
+      "Pending": "нерешен",
+      "Failed": "није успео"
+    },
+    "status_payment": {
+      "not_shared": "немате приступ овим подацима",
+      "not_paid": "нисте платили за приступ овим подацима",
+      "no_points": "Надоградите своју претплату да бисте видели ове податке"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "почетних $t(dataModel:state) података",
+    "initialControlState": "почетних $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "почетних $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "није исправан број",
+    "lengthTooLong": "дужина не би требало да прелази {{max}} карактера",
+    "numberTooSmall": "број треба да буде већи од {{number}}",
+    "numberTooLarge": "број треба да буде мањи од {{number}}",
+    "outsideNumberRange": "број треба да буде између {{min}} и {{max}}"
+  },
+  "file": "фајл",
+  "file_other": "фајлови"
+}

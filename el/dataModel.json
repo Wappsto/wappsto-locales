@@ -1,0 +1,212 @@
+{
+  "uuid": "ταυτότητα",
+  "timestamp": "χρονική σφραγίδα",
+  "true": "αληθής",
+  "false": "ψευδής",
+  "name": "όνομα",
+  "originalName": "αρχικό όνομα",
+  "version": "εκδοχή",
+  "description": "περιγραφή",
+  "product": "προϊόν",
+  "status": "κατάσταση",
+  "type": "τύπος",
+  "connection": "σύνδεση",
+  "connectionOnline": {
+    "true": "Σε σύνδεση",
+    "false": "εκτός σύνδεσης"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "έκδοση αντικειμένου",
+    "iot": "IoT",
+    "virtual": "εικονικός",
+    "created": "δημιουργήθηκε",
+    "changed": "άλλαξε",
+    "updated": "ΕΠΙΚΑΙΡΟΠΟΙΗΜΕΝΟ",
+    "historical": "ιστορικά αρχεία καταγραφής δεδομένων",
+    "historicalOptions": {
+      "true": "ενεργοποιημένη",
+      "false": "άτομα με ειδικές ανάγκες"
+    },
+    "owner": "ιδιοκτήτης",
+    "manufacturer": "κατασκευαστής",
+    "geo": "γεωγραφική θέση",
+    "geoProperties": {
+      "latitude": "γεωγραφικό πλάτος",
+      "longitude": "γεωγραφικό μήκος",
+      "display_name": "όνομα",
+      "address": "διεύθυνση"
+    }
+  },
+  "network": "συσκευή",
+  "network_other": "συσκευές",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "ημερήσιο όριο",
+      "daily_limitProperties": {
+        "point": "σημεία",
+        "iot_traffic": "Διακίνηση IoT",
+        "request": "αίτηση",
+        "request_time": "χρόνος αιτήματος",
+        "dynamic": "δυναμικός"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "πράγμα",
+  "device_other": "πράγματα",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "πρωτόκολλο",
+    "serial": "κατα συρροη",
+    "communication": "επικοινωνία",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "κατασκευαστής",
+    "control_timeout": "timeout ελέγχου",
+    "control_when_offline": "ελεγχόμενη ενώ είστε εκτός σύνδεσης",
+    "included": "περιλαμβάνεται",
+    "inclusion_status": "κατάσταση ένταξης",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "ένταξη σε εξέλιξη...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "επιτυχής ένταξη",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "η συμπερίληψη απέτυχε",
+      "STATUS_DEVICE_REPORTING": "αναφορά...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "αναφέρθηκε επιτυχώς",
+      "STATUS_DEVICE_REPORT_FAILURE": "απέτυχε να αναφέρει",
+      "EXCLUDED": "εξαιρούνται",
+      "INCLUDED": "περιλαμβάνεται"
+    },
+    "firmware_status": "κατάσταση υλικολογισμικού",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "ενημερωμένο",
+      "UPDATE_AVAILABLE": "διαθέσιμη ενημέρωση",
+      "UPLOADING": "ανέβασμα...",
+      "UPLOAD_COMPLETE": "η μεταφόρτωση ολοκληρώθηκε",
+      "UPLOADING_FAILURE": "απέτυχε η μεταφόρτωση",
+      "FLASHING": "αναβοσβήνει...",
+      "FLASHING_COMPLETE": "αναβοσβήνει ολοκληρωθεί",
+      "FLASHING_FAILURE": "απέτυχε να αναβοσβήνει"
+    },
+    "firmware_upload_progress": "πρόοδος μεταφόρτωσης υλικολογισμικού",
+    "firmware_available_version": "διαθέσιμη έκδοση υλικολογισμικού",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "αξία",
+  "value_other": "αξίες",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) όνομα",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "περίοδος",
+    "delta": "δέλτα",
+    "permission": "άδεια",
+    "permissionOptions": {
+      "none": "χωρίς άδεια",
+      "r": "μόνο για ανάγνωση",
+      "w": "γράφουν μόνο",
+      "rw": "διάβασε και γράψε",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "Εντάξει",
+      "update": "εκσυγχρονίζω",
+      "pending": "εκκρεμής"
+    },
+    "dataType": "Τύπος δεδομένων",
+    "number": "αριθμός",
+    "numberProperties": {
+      "si_conversion": "Μετατροπή SI",
+      "unit": "μονάδα",
+      "min": "ελάχιστος αριθμός",
+      "max": "μέγιστος αριθμός",
+      "step": "μέγεθος βήματος",
+      "mapping": "χαρτογράφηση",
+      "ordered_mapping": "παραγγελία χαρτογράφησης",
+      "meaningful_zero": "ουσιαστικό μηδέν"
+    },
+    "string": "σειρά",
+    "stringProperties": {
+      "encoding": "κωδικοποίηση",
+      "max": "μέγιστο μήκος"
+    },
+    "blob": "άμορφη μάζα",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "χώρο ονομάτων"
+    }
+  },
+  "state": "κατάσταση",
+  "state_other": "πολιτείες",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "δεδομένα",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "ρεύμα",
+      "Control": "επιθυμητό"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "Απεσταλμένα",
+      "Pending": "εκκρεμής",
+      "Failed": "απέτυχε"
+    },
+    "status_payment": {
+      "not_shared": "δεν έχετε πρόσβαση σε αυτά τα δεδομένα",
+      "not_paid": "δεν έχετε πληρώσει για πρόσβαση σε αυτά τα δεδομένα",
+      "no_points": "Αναβαθμίστε τη συνδρομή σας για να δείτε αυτά τα δεδομένα"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "αρχικά $t(dataModel:state) δεδομένα",
+    "initialControlState": "αρχικό $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "αρχικό $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "δεν είναι έγκυρος αριθμός",
+    "lengthTooLong": "το μήκος δεν πρέπει να υπερβαίνει τους {{max}} χαρακτήρες",
+    "numberTooSmall": "ο αριθμός πρέπει να είναι μεγαλύτερος από {{number}}",
+    "numberTooLarge": "ο αριθμός πρέπει να είναι μικρότερος από {{number}}",
+    "outsideNumberRange": "ο αριθμός πρέπει να είναι μεταξύ {{min}} και {{max}}"
+  },
+  "file": "αρχείο",
+  "file_other": "αρχεία"
+}

@@ -1,0 +1,212 @@
+{
+  "uuid": "ID kaart",
+  "timestamp": "tijdstempel",
+  "true": "WAAR",
+  "false": "vals",
+  "name": "naam",
+  "originalName": "originele naam",
+  "version": "versie",
+  "description": "beschrijving",
+  "product": "Product",
+  "status": "toestand",
+  "type": "type",
+  "connection": "verbinding",
+  "connectionOnline": {
+    "true": "online",
+    "false": "offline"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objectversie",
+    "iot": "IoT",
+    "virtual": "virtueel",
+    "created": "gemaakt",
+    "changed": "veranderd",
+    "updated": "bijgewerkt",
+    "historical": "historische datalogs",
+    "historicalOptions": {
+      "true": "ingeschakeld",
+      "false": "gehandicapt"
+    },
+    "owner": "eigenaar",
+    "manufacturer": "fabrikant",
+    "geo": "geolocatie",
+    "geoProperties": {
+      "latitude": "breedtegraad",
+      "longitude": "Lengtegraad",
+      "display_name": "naam",
+      "address": "adres"
+    }
+  },
+  "network": "apparaat",
+  "network_other": "apparaten",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "dagelijkse limiet",
+      "daily_limitProperties": {
+        "point": "punten",
+        "iot_traffic": "IoT-verkeer",
+        "request": "verzoek",
+        "request_time": "tijd aanvragen",
+        "dynamic": "dynamisch"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "ding",
+  "device_other": "dingen",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protocol",
+    "serial": "serieel",
+    "communication": "communicatie",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "fabrikant",
+    "control_timeout": "time-out voor controle",
+    "control_when_offline": "bestuurbaar terwijl u offline bent",
+    "included": "inbegrepen",
+    "inclusion_status": "inclusiestatus",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "inclusie in uitvoering...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "inclusie succesvol",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "inclusie mislukt",
+      "STATUS_DEVICE_REPORTING": "rapportage...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "succesvol gerapporteerd",
+      "STATUS_DEVICE_REPORT_FAILURE": "heeft zich niet kunnen melden",
+      "EXCLUDED": "uitgesloten",
+      "INCLUDED": "inbegrepen"
+    },
+    "firmware_status": "firmwarestatus",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "actueel",
+      "UPDATE_AVAILABLE": "update beschikbaar",
+      "UPLOADING": "uploaden...",
+      "UPLOAD_COMPLETE": "uploaden voltooid",
+      "UPLOADING_FAILURE": "Kan niet uploaden",
+      "FLASHING": "knipperend...",
+      "FLASHING_COMPLETE": "knipperen voltooid",
+      "FLASHING_FAILURE": "knipperen mislukt"
+    },
+    "firmware_upload_progress": "voortgang van het uploaden van de firmware",
+    "firmware_available_version": "beschikbare firmwareversie",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "waarde",
+  "value_other": "waarden",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) naam",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "periode",
+    "delta": "delta",
+    "permission": "toestemming",
+    "permissionOptions": {
+      "none": "geen toestemming",
+      "r": "alleen lezen",
+      "w": "schrijf alleen",
+      "rw": "lezen en schrijven",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "update",
+      "pending": "in behandeling"
+    },
+    "dataType": "data type",
+    "number": "nummer",
+    "numberProperties": {
+      "si_conversion": "SI-conversie",
+      "unit": "eenheid",
+      "min": "minimaal aantal",
+      "max": "Maximaal nummer",
+      "step": "stapgrootte",
+      "mapping": "in kaart brengen",
+      "ordered_mapping": "geordende mapping",
+      "meaningful_zero": "betekenisvolle nul"
+    },
+    "string": "snaar",
+    "stringProperties": {
+      "encoding": "codering",
+      "max": "maximale lengte"
+    },
+    "blob": "klodder",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "naamruimte"
+    }
+  },
+  "state": "staat",
+  "state_other": "staten",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "gegevens",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "huidig",
+      "Control": "gewenst"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "verstuurd",
+      "Pending": "in behandeling",
+      "Failed": "mislukt"
+    },
+    "status_payment": {
+      "not_shared": "u heeft geen toegang tot deze gegevens",
+      "not_paid": "u heeft niet betaald voor toegang tot deze gegevens",
+      "no_points": "Upgrade uw abonnement om deze gegevens te bekijken"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "initiële $t(dataModel:state)-gegevens",
+    "initialControlState": "aanvankelijk $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "aanvankelijk $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "geen geldig nummer",
+    "lengthTooLong": "de lengte mag niet groter zijn dan {{max}} tekens",
+    "numberTooSmall": "het getal moet groter zijn dan {{number}}",
+    "numberTooLarge": "het getal moet kleiner zijn dan {{number}}",
+    "outsideNumberRange": "het nummer moet tussen {{min}} en {{max}} liggen"
+  },
+  "file": "bestand",
+  "file_other": "bestanden"
+}

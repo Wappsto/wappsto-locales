@@ -1,0 +1,49 @@
+{
+  "300054": "Verifieringslänken har upphört att gälla.",
+  "300058": "Användarnamnet matchar inte",
+  "300063": "Fel lösenord",
+  "300084": "Användarnamn eller lösenord matchar inte.",
+  "300098": "Du har inte tillräckligt med poäng för att utföra den här åtgärden.",
+  "400006": "Du har inte behörighet att komma åt detta.",
+  "400017": "Du kan inte ändra behörigheter",
+  "9900007": "Kontrollera att du inte är en robot.",
+  "9900032": "Ogiltig åtgärd",
+  "9900145": "förutsatt att UUID inte hittas.",
+  "9900147": "förutsatt att UUID inte finns.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "användarnamnet matchar inte",
+  "134000004": "Enheten har rapporterat ett fel.",
+  "134000005": "enheten är otillgänglig eller offline.",
+  "134000006": "enheten tar för lång tid att svara.",
+  "139000005": "Du har nått din månatliga enhetsgräns. Vänligen uppgradera din prenumeration för att fortsätta.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Du har nått det maximala antalet tillåtna enheter.",
+  "444000002": "Ditt konto har slut på poäng.",
+  "505000021": "Ogiltig filterparameter används: '{{wrong_value}}'",
+  "internetConnectionLost": "Internetanslutningen har förlorats",
+  "fileTooBig": "Filen är för stor",
+  "generic": "Något gick fel.",
+  "noResponse": "något gick fel, verifiera att du är ansluten till internet",
+  "notImage": "Filen är inte en bild",
+  "invalidSession": "din session är ogiltig",
+  "statistics": {
+    "fetch": "misslyckades med att hämta data"
+  },
+  "status": {
+    "404": "fel slutpunkt",
+    "502": "föreslå uppehåll",
+    "503": "tjänsten inte tillgänglig",
+    "504": "gateway timeout"
+  },
+  "stream": {
+    "connectionLost": "strömanslutningen försvinner",
+    "code": {
+      "4000": "internt serverfel",
+      "4001": "session inte giltig",
+      "4002": "förbjuden",
+      "4003": "saknat abonnemang",
+      "4004": "stannade",
+      "4005": "det gick inte att öppna WebSocket"
+    }
+  }
+}

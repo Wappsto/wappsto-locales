@@ -1,0 +1,49 @@
+{
+  "300054": "Linkul de verificare a expirat.",
+  "300058": "Numele de utilizator nu se potrivește",
+  "300063": "Parola gresita",
+  "300084": "Numele de utilizator sau parola nu se potrivesc.",
+  "300098": "Nu aveți suficiente puncte pentru a efectua această acțiune.",
+  "400006": "Nu aveți permisiunea de a accesa aceasta.",
+  "400017": "Nu puteți schimba permisiunile",
+  "9900007": "Vă rugăm să verificați că nu sunteți un robot.",
+  "9900032": "Acțiune nevalidă",
+  "9900145": "cu condiția ca UUID-ul să nu fie găsit.",
+  "9900147": "cu condiția ca UUID să nu existe.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "numele de utilizator nu se potrivește",
+  "134000004": "Dispozitivul a raportat o eroare.",
+  "134000005": "dispozitivul este inaccesibil sau offline.",
+  "134000006": "dispozitivul durează prea mult să răspundă.",
+  "139000005": "Ați atins limita lunară de dispozitive. Vă rugăm să actualizați abonamentul pentru a continua.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Ați atins numărul maxim de dispozitive permise.",
+  "444000002": "Contul dvs. a rămas fără puncte.",
+  "505000021": "Este utilizat un parametru de filtru nevalid: „{{wrong_value}}”",
+  "internetConnectionLost": "conexiunea la internet este pierdută",
+  "fileTooBig": "Dosarul este prea mare",
+  "generic": "Ceva n-a mers bine.",
+  "noResponse": "ceva a mers prost, verificați dacă sunteți conectat la internet",
+  "notImage": "Fișierul nu este o imagine",
+  "invalidSession": "sesiunea ta este nevalidă",
+  "statistics": {
+    "fetch": "nu a reușit să obțină date"
+  },
+  "status": {
+    "404": "punct final greșit",
+    "502": "cerere de expirare",
+    "503": "Serviciu indisponibil",
+    "504": "timeout gateway"
+  },
+  "stream": {
+    "connectionLost": "conexiunea la flux s-a pierdut",
+    "code": {
+      "4000": "Internal Server Error",
+      "4001": "sesiune nu este valabilă",
+      "4002": "interzis",
+      "4003": "abonament lipsă",
+      "4004": "oprit",
+      "4005": "nu a reușit să deschidă WebSocket"
+    }
+  }
+}

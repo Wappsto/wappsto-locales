@@ -1,0 +1,49 @@
+{
+  "300054": "Kinnituslink on aegunud.",
+  "300058": "Kasutajanimi ei sobi",
+  "300063": "Vale parool",
+  "300084": "Kasutajanimi või parool ei ühti.",
+  "300098": "Teil pole selle toimingu tegemiseks piisavalt punkte.",
+  "400006": "Teil pole sellele juurdepääsu luba.",
+  "400017": "Te ei saa õigusi muuta",
+  "9900007": "Veenduge, et te pole robot.",
+  "9900032": "Kehtetu toiming",
+  "9900145": "tingimusel, et UUID-d ei leitud.",
+  "9900147": "tingimusel, et UUID-d pole olemas.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "kasutajanimi ei sobi",
+  "134000004": "Seade teatas veast.",
+  "134000005": "seade on kättesaamatu või võrguühenduseta.",
+  "134000006": "seadmel võtab vastamine liiga kaua aega.",
+  "139000005": "Olete jõudnud oma igakuise seadmelimiidini. Jätkamiseks uuendage oma tellimust.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Olete jõudnud maksimaalse lubatud seadmete arvuni.",
+  "444000002": "Teie kontol on punktid otsa saanud.",
+  "505000021": "Kasutatud on kehtetut filtriparameetrit: '{{wrong_value}}'",
+  "internetConnectionLost": "internetiühendus kaob",
+  "fileTooBig": "Fail on liiga suur",
+  "generic": "Midagi läks valesti.",
+  "noResponse": "midagi läks valesti, kontrollige, kas teil on Interneti-ühendus",
+  "notImage": "Fail ei ole pilt",
+  "invalidSession": "teie seanss on kehtetu",
+  "statistics": {
+    "fetch": "andmeid ei õnnestunud hankida"
+  },
+  "status": {
+    "404": "vale lõpp-punkt",
+    "502": "taotle aegumist",
+    "503": "teenus pole saadaval",
+    "504": "lüüsi ajalõpp"
+  },
+  "stream": {
+    "connectionLost": "vooühendus katkeb",
+    "code": {
+      "4000": "sisemine serveri viga",
+      "4001": "seanss ei kehti",
+      "4002": "keelatud",
+      "4003": "puudub tellimus",
+      "4004": "peatunud",
+      "4005": "WebSocketi avamine ebaõnnestus"
+    }
+  }
+}

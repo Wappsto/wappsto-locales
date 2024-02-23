@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "laiko žyma",
+  "true": "tiesa",
+  "false": "klaidinga",
+  "name": "vardas",
+  "originalName": "originalus pavadinimas",
+  "version": "versija",
+  "description": "apibūdinimas",
+  "product": "produktas",
+  "status": "statusą",
+  "type": "tipo",
+  "connection": "ryšį",
+  "connectionOnline": {
+    "true": "prisijungęs",
+    "false": "neprisijungus"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objekto versija",
+    "iot": "IoT",
+    "virtual": "virtualus",
+    "created": "sukurtas",
+    "changed": "pasikeitė",
+    "updated": "atnaujinta",
+    "historical": "istorinių duomenų žurnalai",
+    "historicalOptions": {
+      "true": "įjungtas",
+      "false": "neįgalus"
+    },
+    "owner": "savininkas",
+    "manufacturer": "gamintojas",
+    "geo": "geolokacija",
+    "geoProperties": {
+      "latitude": "platumos",
+      "longitude": "ilguma",
+      "display_name": "vardas",
+      "address": "adresu"
+    }
+  },
+  "network": "prietaisas",
+  "network_other": "prietaisai",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "dienos limitas",
+      "daily_limitProperties": {
+        "point": "taškų",
+        "iot_traffic": "IoT srautas",
+        "request": "prašymas",
+        "request_time": "prašyti laiko",
+        "dynamic": "dinamiškas"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "dalykas",
+  "device_other": "dalykų",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokolas",
+    "serial": "serijinis",
+    "communication": "bendravimas",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "gamintojas",
+    "control_timeout": "valdymo laikas",
+    "control_when_offline": "valdomas neprisijungus",
+    "included": "įskaitant",
+    "inclusion_status": "įtraukimo būsena",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "įtraukimas vyksta...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "sėkmingas įtraukimas",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "įtraukti nepavyko",
+      "STATUS_DEVICE_REPORTING": "pranešti...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "pranešta sėkmingai",
+      "STATUS_DEVICE_REPORT_FAILURE": "nepranešti nepavyko",
+      "EXCLUDED": "neįtraukti",
+      "INCLUDED": "įskaitant"
+    },
+    "firmware_status": "programinės įrangos būsena",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "atnaujinta",
+      "UPDATE_AVAILABLE": "galimas atnaujinimas",
+      "UPLOADING": "įkeliama...",
+      "UPLOAD_COMPLETE": "įkėlimas baigtas",
+      "UPLOADING_FAILURE": "nepavyko įkelti",
+      "FLASHING": "mirksi...",
+      "FLASHING_COMPLETE": "mirksėjimas baigtas",
+      "FLASHING_FAILURE": "mirksėti nepavyko"
+    },
+    "firmware_upload_progress": "programinės įrangos įkėlimo eiga",
+    "firmware_available_version": "turima programinės įrangos versija",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "vertė",
+  "value_other": "vertybes",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) vardas",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "laikotarpį",
+    "delta": "delta",
+    "permission": "leidimas",
+    "permissionOptions": {
+      "none": "nėra leidimo",
+      "r": "Tik skaitymui",
+      "w": "rašyti tik",
+      "rw": "Skaityti ir rašyti",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "Gerai",
+      "update": "atnaujinti",
+      "pending": "kol"
+    },
+    "dataType": "duomenų tipas",
+    "number": "numerį",
+    "numberProperties": {
+      "si_conversion": "SI konvertavimas",
+      "unit": "vienetas",
+      "min": "minimalus skaičius",
+      "max": "maksimalus skaičius",
+      "step": "žingsnio dydis",
+      "mapping": "kartografavimas",
+      "ordered_mapping": "užsakytas kartografavimas",
+      "meaningful_zero": "prasmingas nulis"
+    },
+    "string": "styga",
+    "stringProperties": {
+      "encoding": "kodavimas",
+      "max": "maksimalus ilgis"
+    },
+    "blob": "dėmė",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "vardų erdvė"
+    }
+  },
+  "state": "valstybė",
+  "state_other": "teigia",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "duomenis",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "srovė",
+      "Control": "norima"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "išsiųstas",
+      "Pending": "kol",
+      "Failed": "nepavyko"
+    },
+    "status_payment": {
+      "not_shared": "neturite prieigos prie šių duomenų",
+      "not_paid": "nesumokėjote už prieigą prie šių duomenų",
+      "no_points": "Norėdami peržiūrėti šiuos duomenis, atnaujinkite prenumeratą"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "pradiniai $t(dataModel:state) duomenys",
+    "initialControlState": "pradinis $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "pradinis $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "neteisingas numeris",
+    "lengthTooLong": "ilgis neturi viršyti {{max}} simbolių",
+    "numberTooSmall": "skaičius turi būti didesnis nei {{number}}",
+    "numberTooLarge": "skaičius turi būti mažesnis nei {{number}}",
+    "outsideNumberRange": "skaičius turi būti nuo {{min}} iki {{max}}"
+  },
+  "file": "failą",
+  "file_other": "failus"
+}

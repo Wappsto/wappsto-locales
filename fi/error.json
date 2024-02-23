@@ -1,0 +1,49 @@
+{
+  "300054": "Vahvistuslinkki on vanhentunut.",
+  "300058": "Käyttäjätunnus ei täsmää",
+  "300063": "Väärä salasana",
+  "300084": "Käyttäjätunnus tai salasana ei täsmää.",
+  "300098": "Sinulla ei ole tarpeeksi pisteitä tämän toiminnon suorittamiseen.",
+  "400006": "Sinulla ei ole lupaa käyttää tätä.",
+  "400017": "Et voi muuttaa käyttöoikeuksia",
+  "9900007": "Varmista, että et ole robotti.",
+  "9900032": "Virheellinen toiminto",
+  "9900145": "jos UUID:tä ei löydy.",
+  "9900147": "jos UUID:tä ei ole olemassa.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "käyttäjätunnus ei täsmää",
+  "134000004": "Laite on ilmoittanut virheestä.",
+  "134000005": "laitteeseen ei saada yhteyttä tai se on offline-tilassa.",
+  "134000006": "laitteen vastaaminen kestää liian kauan.",
+  "139000005": "Olet saavuttanut kuukausittaisen laiterajan. Päivitä tilauksesi jatkaaksesi.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Olet saavuttanut sallittujen laitteiden enimmäismäärän.",
+  "444000002": "Tilisi pisteet ovat loppuneet.",
+  "505000021": "Käytössä on virheellinen suodatinparametri: '{{wrong_value}}'",
+  "internetConnectionLost": "internetyhteys katkeaa",
+  "fileTooBig": "Tiedosto on liian suuri",
+  "generic": "Jotain meni pieleen.",
+  "noResponse": "jotain meni pieleen, varmista, että olet yhteydessä Internetiin",
+  "notImage": "Tiedosto ei ole kuva",
+  "invalidSession": "istuntosi on virheellinen",
+  "statistics": {
+    "fetch": "tietojen saaminen epäonnistui"
+  },
+  "status": {
+    "404": "väärä päätepiste",
+    "502": "Pyynnön aikakatkaisu",
+    "503": "palvelu ei saatavilla",
+    "504": "yhdyskäytävän aikakatkaisu"
+  },
+  "stream": {
+    "connectionLost": "suoratoistoyhteys katkeaa",
+    "code": {
+      "4000": "sisäinen palvelinvirhe",
+      "4001": "istunto ei kelpaa",
+      "4002": "kielletty",
+      "4003": "puuttuva tilaus",
+      "4004": "pysähtyi",
+      "4005": "WebSocketin avaaminen epäonnistui"
+    }
+  }
+}

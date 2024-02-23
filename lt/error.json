@@ -1,0 +1,49 @@
+{
+  "300054": "Patvirtinimo nuoroda nebegalioja.",
+  "300058": "Vartotojo vardas nesutampa",
+  "300063": "Neteisingas slaptažodis",
+  "300084": "Vartotojo vardas arba slaptažodis nesutampa.",
+  "300098": "Neturite pakankamai taškų šiam veiksmui atlikti.",
+  "400006": "Neturite leidimo tai pasiekti.",
+  "400017": "Negalite keisti leidimų",
+  "9900007": "Patvirtinkite, kad nesate robotas.",
+  "9900032": "Netinkamas veiksmas",
+  "9900145": "su sąlyga, kad UUID nerastas.",
+  "9900147": "su sąlyga, kad UUID nėra.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "vartotojo vardas nesutampa",
+  "134000004": "Įrenginys pranešė apie klaidą.",
+  "134000005": "įrenginys nepasiekiamas arba neprisijungęs.",
+  "134000006": "įrenginys per ilgai reaguoja.",
+  "139000005": "Pasiekėte įrenginio mėnesio limitą. Norėdami tęsti, atnaujinkite prenumeratą.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Pasiekėte didžiausią leidžiamų įrenginių skaičių.",
+  "444000002": "Jūsų paskyroje baigėsi taškai.",
+  "505000021": "Naudojamas netinkamas filtro parametras: '{{wrong_value}}'",
+  "internetConnectionLost": "interneto ryšys nutrūko",
+  "fileTooBig": "Failas per didelis",
+  "generic": "Kažkas nutiko.",
+  "noResponse": "kažkas nutiko, patikrinkite, ar esate prisijungę prie interneto",
+  "notImage": "Failas nėra vaizdas",
+  "invalidSession": "jūsų sesija negalioja",
+  "statistics": {
+    "fetch": "nepavyko gauti duomenų"
+  },
+  "status": {
+    "404": "neteisingas galutinis taškas",
+    "502": "reikalauti pertraukos",
+    "503": "paslauga nepasiekiama",
+    "504": "šliuzo skirtasis laikas"
+  },
+  "stream": {
+    "connectionLost": "srauto ryšys nutrūko",
+    "code": {
+      "4000": "Vidinė serverio klaida",
+      "4001": "sesija negalioja",
+      "4002": "draudžiama",
+      "4003": "trūksta prenumeratos",
+      "4004": "sustojo",
+      "4005": "nepavyko atidaryti WebSocket"
+    }
+  }
+}

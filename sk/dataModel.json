@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "časová značka",
+  "true": "pravda",
+  "false": "falošné",
+  "name": "názov",
+  "originalName": "pôvodný názov",
+  "version": "verzia",
+  "description": "popis",
+  "product": "produkt",
+  "status": "postavenie",
+  "type": "typu",
+  "connection": "spojenie",
+  "connectionOnline": {
+    "true": "online",
+    "false": "offline"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objektová verzia",
+    "iot": "IoT",
+    "virtual": "virtuálne",
+    "created": "vytvorené",
+    "changed": "zmenené",
+    "updated": "aktualizované",
+    "historical": "protokoly historických údajov",
+    "historicalOptions": {
+      "true": "povolené",
+      "false": "zdravotne postihnutých"
+    },
+    "owner": "vlastník",
+    "manufacturer": "výrobca",
+    "geo": "geolokácia",
+    "geoProperties": {
+      "latitude": "zemepisnej šírky",
+      "longitude": "zemepisná dĺžka",
+      "display_name": "názov",
+      "address": "adresu"
+    }
+  },
+  "network": "zariadenie",
+  "network_other": "zariadení",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "denný limit",
+      "daily_limitProperties": {
+        "point": "bodov",
+        "iot_traffic": "návštevnosť internetu vecí",
+        "request": "žiadosť",
+        "request_time": "čas žiadosti",
+        "dynamic": "dynamický"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "vec",
+  "device_other": "veci",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokol",
+    "serial": "sériový",
+    "communication": "komunikácia",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "výrobca",
+    "control_timeout": "časový limit ovládania",
+    "control_when_offline": "ovládateľný v režime offline",
+    "included": "zahrnuté",
+    "inclusion_status": "stav zaradenia",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "zaraďovanie prebieha...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "začlenenie úspešné",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "zaradenie zlyhalo",
+      "STATUS_DEVICE_REPORTING": "hlásenie...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "úspešne nahlásené",
+      "STATUS_DEVICE_REPORT_FAILURE": "nepodarilo nahlásiť",
+      "EXCLUDED": "vylúčené",
+      "INCLUDED": "zahrnuté"
+    },
+    "firmware_status": "stav firmvéru",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "aktuálny",
+      "UPDATE_AVAILABLE": "aktualizácia je dostupná",
+      "UPLOADING": "nahráva sa...",
+      "UPLOAD_COMPLETE": "nahrávanie dokončené",
+      "UPLOADING_FAILURE": "nepodarilo sa odovzdať",
+      "FLASHING": "bliká...",
+      "FLASHING_COMPLETE": "blikanie dokončené",
+      "FLASHING_FAILURE": "blikanie zlyhalo"
+    },
+    "firmware_upload_progress": "priebeh nahrávania firmvéru",
+    "firmware_available_version": "dostupná verzia firmvéru",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "hodnotu",
+  "value_other": "hodnoty",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) meno",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "obdobie",
+    "delta": "delta",
+    "permission": "povolenie",
+    "permissionOptions": {
+      "none": "bez povolenia",
+      "r": "iba na čítanie",
+      "w": "len písať",
+      "rw": "čítaj a píš",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "aktualizovať",
+      "pending": "čakajúce"
+    },
+    "dataType": "Dátový typ",
+    "number": "číslo",
+    "numberProperties": {
+      "si_conversion": "SI prevod",
+      "unit": "jednotka",
+      "min": "minimálny počet",
+      "max": "maximálny počet",
+      "step": "veľkosť kroku",
+      "mapping": "mapovanie",
+      "ordered_mapping": "objednané mapovanie",
+      "meaningful_zero": "zmysluplná nula"
+    },
+    "string": "reťazec",
+    "stringProperties": {
+      "encoding": "kódovanie",
+      "max": "maximálna dĺžka"
+    },
+    "blob": "kvapka",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "menný priestor"
+    }
+  },
+  "state": "štát",
+  "state_other": "štátov",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "údajov",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "prúd",
+      "Control": "želaný"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "odoslaná",
+      "Pending": "čakajúce",
+      "Failed": "nepodarilo"
+    },
+    "status_payment": {
+      "not_shared": "k týmto údajom nemáte prístup",
+      "not_paid": "nezaplatili ste za prístup k týmto údajom",
+      "no_points": "Ak chcete zobraziť tieto údaje, inovujte svoje predplatné"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "počiatočných $t(dataModel:state) údajov",
+    "initialControlState": "počiatočné $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "počiatočné $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "nie je platné číslo",
+    "lengthTooLong": "dĺžka by nemala presiahnuť {{max}} znakov",
+    "numberTooSmall": "číslo by malo byť väčšie ako {{number}}",
+    "numberTooLarge": "číslo by malo byť menšie ako {{number}}",
+    "outsideNumberRange": "číslo by malo byť medzi {{min}} a {{max}}"
+  },
+  "file": "súbor",
+  "file_other": "súbory"
+}

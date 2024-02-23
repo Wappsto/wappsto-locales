@@ -1,0 +1,49 @@
+{
+  "300054": "Verifikācijas saites derīguma termiņš ir beidzies.",
+  "300058": "Lietotājvārds neatbilst",
+  "300063": "Nepareiza parole",
+  "300084": "Lietotājvārds vai parole nesakrīt.",
+  "300098": "Jums nav pietiekami daudz punktu, lai veiktu šo darbību.",
+  "400006": "Jums nav atļaujas tai piekļūt.",
+  "400017": "Jūs nevarat mainīt atļaujas",
+  "9900007": "Lūdzu, pārbaudiet, vai neesat robots.",
+  "9900032": "Nederīga darbība",
+  "9900145": "ar nosacījumu, ka UUID nav atrasts.",
+  "9900147": "ar nosacījumu, ka UUID neeksistē.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "lietotājvārds nesakrīt",
+  "134000004": "Ierīce ir ziņojusi par kļūdu.",
+  "134000005": "ierīce ir nesasniedzama vai bezsaistē.",
+  "134000006": "ierīcei ir nepieciešams pārāk ilgs laiks, lai reaģētu.",
+  "139000005": "Jūs esat sasniedzis ikmēneša ierīču ierobežojumu. Lūdzu, jauniniet savu abonementu, lai turpinātu.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Jūs esat sasniedzis maksimālo atļauto ierīču skaitu.",
+  "444000002": "Jūsu kontā ir beigušies punkti.",
+  "505000021": "Tiek izmantots nederīgs filtra parametrs: '{{wrong_value}}'",
+  "internetConnectionLost": "interneta savienojums ir zaudēts",
+  "fileTooBig": "Fails ir pārāk liels",
+  "generic": "Kaut kas nogāja greizi.",
+  "noResponse": "kaut kas nogāja greizi, lūdzu, pārbaudiet, vai ir izveidots savienojums ar internetu",
+  "notImage": "Fails nav attēls",
+  "invalidSession": "jūsu sesija nav derīga",
+  "statistics": {
+    "fetch": "neizdevās iegūt datus"
+  },
+  "status": {
+    "404": "nepareizs galapunkts",
+    "502": "palūgt pārtraukumu",
+    "503": "Pakalpojums nav pieejams",
+    "504": "vārtejas taimauts"
+  },
+  "stream": {
+    "connectionLost": "straumes savienojums tiek zaudēts",
+    "code": {
+      "4000": "Iekšējā servera kļūda",
+      "4001": "sesija nav derīga",
+      "4002": "aizliegts",
+      "4003": "trūkst abonementa",
+      "4004": "apstājās",
+      "4005": "neizdevās atvērt WebSocket"
+    }
+  }
+}

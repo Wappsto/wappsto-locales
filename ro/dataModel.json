@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "timestamp-ul",
+  "true": "Adevărat",
+  "false": "fals",
+  "name": "Nume",
+  "originalName": "numele original",
+  "version": "versiune",
+  "description": "Descriere",
+  "product": "produs",
+  "status": "stare",
+  "type": "tip",
+  "connection": "conexiune",
+  "connectionOnline": {
+    "true": "pe net",
+    "false": "deconectat"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "versiunea obiectului",
+    "iot": "IoT",
+    "virtual": "virtual",
+    "created": "creată",
+    "changed": "schimbat",
+    "updated": "actualizat",
+    "historical": "jurnalele de date istorice",
+    "historicalOptions": {
+      "true": "activat",
+      "false": "dezactivat"
+    },
+    "owner": "proprietar",
+    "manufacturer": "producător",
+    "geo": "geolocalizare",
+    "geoProperties": {
+      "latitude": "latitudine",
+      "longitude": "longitudine",
+      "display_name": "Nume",
+      "address": "abordare"
+    }
+  },
+  "network": "dispozitiv",
+  "network_other": "dispozitive",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "limita zilnică",
+      "daily_limitProperties": {
+        "point": "puncte",
+        "iot_traffic": "Trafic IoT",
+        "request": "cerere",
+        "request_time": "timp solicitat",
+        "dynamic": "dinamic"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "lucru",
+  "device_other": "lucruri",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protocol",
+    "serial": "serial",
+    "communication": "comunicare",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "producător",
+    "control_timeout": "control timeout",
+    "control_when_offline": "controlabil în timp ce este offline",
+    "included": "inclus",
+    "inclusion_status": "statutul de includere",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "includere in curs...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "incluziunea de succes",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "includerea a eșuat",
+      "STATUS_DEVICE_REPORTING": "raportare...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "raportat cu succes",
+      "STATUS_DEVICE_REPORT_FAILURE": "nu a reușit să raporteze",
+      "EXCLUDED": "exclus",
+      "INCLUDED": "inclus"
+    },
+    "firmware_status": "starea firmware-ului",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "la zi",
+      "UPDATE_AVAILABLE": "actualizare disponibila",
+      "UPLOADING": "se încarcă...",
+      "UPLOAD_COMPLETE": "încărcare finalizată",
+      "UPLOADING_FAILURE": "nu s-a putut încărca",
+      "FLASHING": "clipind...",
+      "FLASHING_COMPLETE": "intermitent terminat",
+      "FLASHING_FAILURE": "intermiterea a eșuat"
+    },
+    "firmware_upload_progress": "progresul încărcării firmware-ului",
+    "firmware_available_version": "versiunea de firmware disponibilă",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "valoare",
+  "value_other": "valorile",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) nume",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "perioadă",
+    "delta": "delta",
+    "permission": "permisiune",
+    "permissionOptions": {
+      "none": "fara permisiune",
+      "r": "numai citit",
+      "w": "scrie doar",
+      "rw": "Citeste si scrie",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "Bine",
+      "update": "Actualizați",
+      "pending": "in asteptarea"
+    },
+    "dataType": "tip de date",
+    "number": "număr",
+    "numberProperties": {
+      "si_conversion": "conversie SI",
+      "unit": "unitate",
+      "min": "număr minim",
+      "max": "număr maxim",
+      "step": "dimensiunea pasului",
+      "mapping": "cartografiere",
+      "ordered_mapping": "cartografiere ordonată",
+      "meaningful_zero": "zero semnificativ"
+    },
+    "string": "şir",
+    "stringProperties": {
+      "encoding": "codificare",
+      "max": "lungime maxima"
+    },
+    "blob": "blob",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "spatiu de nume"
+    }
+  },
+  "state": "stat",
+  "state_other": "state",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "date",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "actual",
+      "Control": "dorit"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "trimis",
+      "Pending": "in asteptarea",
+      "Failed": "a eșuat"
+    },
+    "status_payment": {
+      "not_shared": "nu aveți acces la aceste date",
+      "not_paid": "nu ați plătit pentru a avea acces la aceste date",
+      "no_points": "Actualizați-vă abonamentul pentru a vedea aceste date"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "date inițiale de $t(dataModel:state)",
+    "initialControlState": "inițial $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "inițial $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "nu este un număr valid",
+    "lengthTooLong": "lungimea nu trebuie să depășească {{max}} de caractere",
+    "numberTooSmall": "numărul trebuie să fie mai mare de {{number}}",
+    "numberTooLarge": "numărul trebuie să fie mai mic de {{number}}",
+    "outsideNumberRange": "numărul trebuie să fie între {{min}} și {{max}}"
+  },
+  "file": "fişier",
+  "file_other": "fișiere"
+}

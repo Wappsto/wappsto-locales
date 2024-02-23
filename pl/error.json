@@ -1,0 +1,49 @@
+{
+  "300054": "Link weryfikacyjny wygasł.",
+  "300058": "Nazwa użytkownika nie pasuje",
+  "300063": "Złe hasło",
+  "300084": "Nazwa użytkownika lub hasło nie pasują.",
+  "300098": "Nie masz wystarczającej liczby punktów, aby wykonać tę akcję.",
+  "400006": "Nie masz uprawnień dostępu do tego.",
+  "400017": "Nie możesz zmienić uprawnień",
+  "9900007": "Sprawdź, czy nie jesteś robotem.",
+  "9900032": "Nieprawidłowa akcja",
+  "9900145": "pod warunkiem, że nie znaleziono UUID.",
+  "9900147": "pod warunkiem, że UUID nie istnieje.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "nazwa użytkownika nie pasuje",
+  "134000004": "Urządzenie zgłosiło błąd.",
+  "134000005": "urządzenie jest nieosiągalne lub offline.",
+  "134000006": "urządzenie potrzebuje zbyt dużo czasu na reakcję.",
+  "139000005": "Osiągnąłeś miesięczny limit urządzeń. Aby kontynuować, uaktualnij swoją subskrypcję.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Osiągnąłeś maksymalną liczbę dozwolonych urządzeń.",
+  "444000002": "Na Twoim koncie skończyły się punkty.",
+  "505000021": "Zastosowano nieprawidłowy parametr filtra: „{{wrong_value}}”",
+  "internetConnectionLost": "połączenie internetowe zostało utracone",
+  "fileTooBig": "Plik jest za duży",
+  "generic": "Coś poszło nie tak.",
+  "noResponse": "coś poszło nie tak, sprawdź, czy masz połączenie z Internetem",
+  "notImage": "Plik nie jest obrazem",
+  "invalidSession": "Twoja sesja jest nieważna",
+  "statistics": {
+    "fetch": "nie udało się pobrać danych"
+  },
+  "status": {
+    "404": "niewłaściwy punkt końcowy",
+    "502": "Limit czasu żądania",
+    "503": "serwis niedostępny",
+    "504": "przekroczenie limitu czasu bramy"
+  },
+  "stream": {
+    "connectionLost": "połączenie strumieniowe zostało utracone",
+    "code": {
+      "4000": "wewnętrzny błąd serwera",
+      "4001": "sesja nieważna",
+      "4002": "zabroniony",
+      "4003": "brak subskrypcji",
+      "4004": "zatrzymany",
+      "4005": "nie udało się otworzyć protokołu WebSocket"
+    }
+  }
+}

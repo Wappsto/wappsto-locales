@@ -1,0 +1,49 @@
+{
+  "300054": "Platnost ověřovacího odkazu vypršela.",
+  "300058": "Uživatelské jméno se neshoduje",
+  "300063": "Špatné heslo",
+  "300084": "Uživatelské jméno nebo heslo se neshoduje.",
+  "300098": "K provedení této akce nemáte dostatek bodů.",
+  "400006": "Nemáte oprávnění k přístupu k tomuto.",
+  "400017": "Oprávnění nelze změnit",
+  "9900007": "Prosím ověřte, že nejste robot.",
+  "9900032": "Neplatná akce",
+  "9900145": "za předpokladu, že UUID nebylo nalezeno.",
+  "9900147": "za předpokladu, že UUID neexistuje.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "uživatelské jméno se neshoduje",
+  "134000004": "Zařízení hlásilo chybu.",
+  "134000005": "zařízení je nedostupné nebo offline.",
+  "134000006": "zařízení trvá příliš dlouho, než odpovídá.",
+  "139000005": "Dosáhli jste měsíčního limitu zařízení. Chcete-li pokračovat, upgradujte své předplatné.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Dosáhli jste maximálního povoleného počtu zařízení.",
+  "444000002": "Vašemu účtu došly body.",
+  "505000021": "Je použit neplatný parametr filtru: '{{wrong_value}}'",
+  "internetConnectionLost": "připojení k internetu je ztraceno",
+  "fileTooBig": "Soubor je příliš velký",
+  "generic": "Něco se pokazilo.",
+  "noResponse": "něco se pokazilo, ověřte prosím, že jste připojeni k internetu",
+  "notImage": "Soubor není obrázek",
+  "invalidSession": "vaše relace je neplatná",
+  "statistics": {
+    "fetch": "nepodařilo získat data"
+  },
+  "status": {
+    "404": "špatný koncový bod",
+    "502": "zažádat o timeout",
+    "503": "služba je nedostupná",
+    "504": "časový limit brány"
+  },
+  "stream": {
+    "connectionLost": "připojení ke streamu je ztraceno",
+    "code": {
+      "4000": "interní chyba serveru",
+      "4001": "relace není platná",
+      "4002": "zakázáno",
+      "4003": "chybějící předplatné",
+      "4004": "zastavil",
+      "4005": "se nepodařilo otevřít WebSocket"
+    }
+  }
+}

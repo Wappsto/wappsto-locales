@@ -1,0 +1,49 @@
+{
+  "300054": "Bekreftelseslenken er utløpt.",
+  "300058": "Brukernavnet stemmer ikke",
+  "300063": "Feil passord",
+  "300084": "Brukernavn eller passord stemmer ikke.",
+  "300098": "Du har ikke nok poeng til å utføre denne handlingen.",
+  "400006": "Du har ikke tillatelse til å få tilgang til dette.",
+  "400017": "Du kan ikke endre tillatelser",
+  "9900007": "Vennligst bekreft at du ikke er en robot.",
+  "9900032": "Ugyldig handling",
+  "9900145": "forutsatt at UUID ikke ble funnet.",
+  "9900147": "forutsatt at UUID ikke eksisterer.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "brukernavnet stemmer ikke",
+  "134000004": "Enheten har rapportert en feil.",
+  "134000005": "enheten er utilgjengelig eller offline.",
+  "134000006": "enheten bruker for lang tid på å svare.",
+  "139000005": "Du har nådd den månedlige enhetsgrensen. Oppgrader abonnementet ditt for å fortsette.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Du har nådd det maksimale antallet tillatte enheter.",
+  "444000002": "Kontoen din har gått tom for poeng.",
+  "505000021": "Ugyldig filterparameter er brukt: '{{wrong_value}}'",
+  "internetConnectionLost": "internettforbindelsen er brutt",
+  "fileTooBig": "Filen er for stor",
+  "generic": "Noe gikk galt.",
+  "noResponse": "noe gikk galt, vennligst bekreft at du er koblet til internett",
+  "notImage": "Filen er ikke et bilde",
+  "invalidSession": "økten din er ugyldig",
+  "statistics": {
+    "fetch": "klarte ikke å hente data"
+  },
+  "status": {
+    "404": "feil endepunkt",
+    "502": "be om tidsavbrudd",
+    "503": "tjeneste utilgjengelig",
+    "504": "gateway timeout"
+  },
+  "stream": {
+    "connectionLost": "strømforbindelsen er tapt",
+    "code": {
+      "4000": "intern server feil",
+      "4001": "økten er ikke gyldig",
+      "4002": "forbudt",
+      "4003": "manglende abonnement",
+      "4004": "stoppet",
+      "4005": "klarte ikke å åpne WebSocket"
+    }
+  }
+}

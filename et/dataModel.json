@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "ajatempel",
+  "true": "tõsi",
+  "false": "vale",
+  "name": "nimi",
+  "originalName": "algne nimi",
+  "version": "versioon",
+  "description": "kirjeldus",
+  "product": "toode",
+  "status": "olek",
+  "type": "tüüp",
+  "connection": "ühendus",
+  "connectionOnline": {
+    "true": "võrgus",
+    "false": "võrguühenduseta"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objekti versioon",
+    "iot": "IoT",
+    "virtual": "virtuaalne",
+    "created": "loodud",
+    "changed": "muutunud",
+    "updated": "uuendatud",
+    "historical": "ajaloolised andmelogid",
+    "historicalOptions": {
+      "true": "lubatud",
+      "false": "puudega"
+    },
+    "owner": "omanik",
+    "manufacturer": "tootja",
+    "geo": "geolokatsioon",
+    "geoProperties": {
+      "latitude": "laiuskraad",
+      "longitude": "pikkuskraad",
+      "display_name": "nimi",
+      "address": "aadress"
+    }
+  },
+  "network": "seade",
+  "network_other": "seadmeid",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "päevane limiit",
+      "daily_limitProperties": {
+        "point": "punktid",
+        "iot_traffic": "IoT liiklus",
+        "request": "nõuda",
+        "request_time": "küsi aega",
+        "dynamic": "dünaamiline"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "asi",
+  "device_other": "asju",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokolli",
+    "serial": "sari",
+    "communication": "suhtlemine",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "tootja",
+    "control_timeout": "kontrolli ajalõpp",
+    "control_when_offline": "kontrollitav ka võrguühenduseta",
+    "included": "kaasatud",
+    "inclusion_status": "kaasamise olek",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "kaasamine pooleli...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "kaasamine õnnestunud",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "kaasamine ebaõnnestus",
+      "STATUS_DEVICE_REPORTING": "aruandlus...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "teatas edukalt",
+      "STATUS_DEVICE_REPORT_FAILURE": "jätnud teatama",
+      "EXCLUDED": "välistatud",
+      "INCLUDED": "kaasatud"
+    },
+    "firmware_status": "püsivara olek",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "ajakohane",
+      "UPDATE_AVAILABLE": "uuendus saadaval",
+      "UPLOADING": "üleslaadimine...",
+      "UPLOAD_COMPLETE": "üleslaadimine lõpetatud",
+      "UPLOADING_FAILURE": "üleslaadimine ebaõnnestus",
+      "FLASHING": "vilgub...",
+      "FLASHING_COMPLETE": "vilkumine lõpetatud",
+      "FLASHING_FAILURE": "vilkumine ebaõnnestus"
+    },
+    "firmware_upload_progress": "püsivara üleslaadimise edenemine",
+    "firmware_available_version": "püsivara saadavalolev versioon",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "väärtus",
+  "value_other": "väärtused",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) nimi",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "periood",
+    "delta": "delta",
+    "permission": "luba",
+    "permissionOptions": {
+      "none": "luba puudub",
+      "r": "Loe ainult",
+      "w": "ainult kirjutada",
+      "rw": "Loe ja kirjuta",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "Okei",
+      "update": "värskendada",
+      "pending": "ootel"
+    },
+    "dataType": "andmetüüp",
+    "number": "number",
+    "numberProperties": {
+      "si_conversion": "SI teisendamine",
+      "unit": "üksus",
+      "min": "minimaalne arv",
+      "max": "maksimaalne arv",
+      "step": "sammu suurus",
+      "mapping": "kaardistamine",
+      "ordered_mapping": "tellitud kaardistamine",
+      "meaningful_zero": "tähenduslik null"
+    },
+    "string": "string",
+    "stringProperties": {
+      "encoding": "kodeering",
+      "max": "maksimaalne pikkus"
+    },
+    "blob": "plekk",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "nimeruum"
+    }
+  },
+  "state": "olek",
+  "state_other": "osariigid",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "andmeid",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "praegune",
+      "Control": "soovitud"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "saadetud",
+      "Pending": "ootel",
+      "Failed": "ebaõnnestunud"
+    },
+    "status_payment": {
+      "not_shared": "teil pole nendele andmetele juurdepääsu",
+      "not_paid": "te pole nendele andmetele juurdepääsu eest maksnud",
+      "no_points": "Nende andmete vaatamiseks uuendage oma tellimust"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "esialgsed $t(dataModel:state) andmed",
+    "initialControlState": "esialgne $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "esialgne $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "ei ole kehtiv number",
+    "lengthTooLong": "pikkus ei tohi ületada {{max}} tähemärki",
+    "numberTooSmall": "arv peaks olema suurem kui {{number}}",
+    "numberTooLarge": "arv peaks olema väiksem kui {{number}}",
+    "outsideNumberRange": "number peaks jääma {{min}} ja {{max}} vahele"
+  },
+  "file": "faili",
+  "file_other": "failid"
+}

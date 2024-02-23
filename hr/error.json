@@ -1,0 +1,49 @@
+{
+  "300054": "Veza za potvrdu je istekla.",
+  "300058": "Korisničko ime ne odgovara",
+  "300063": "Pogrešna lozinka",
+  "300084": "Korisničko ime ili lozinka ne odgovaraju.",
+  "300098": "Nemate dovoljno bodova za izvođenje ove radnje.",
+  "400006": "Nemate dozvolu za pristup ovome.",
+  "400017": "Ne možete promijeniti dopuštenja",
+  "9900007": "Potvrdite da niste robot.",
+  "9900032": "Nevažeća radnja",
+  "9900145": "pod uvjetom da UUID nije pronađen.",
+  "9900147": "pod uvjetom da UUID ne postoji.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "korisničko ime ne odgovara",
+  "134000004": "Uređaj je prijavio grešku.",
+  "134000005": "uređaj je nedostupan ili izvan mreže.",
+  "134000006": "uređaju predugo treba da odgovori.",
+  "139000005": "Dosegli ste svoje mjesečno ograničenje uređaja. Za nastavak nadogradite svoju pretplatu.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Dosegli ste najveći dopušteni broj uređaja.",
+  "444000002": "Vaš račun je ostao bez bodova.",
+  "505000021": "Korišten je nevažeći parametar filtra: '{{wrong_value}}'",
+  "internetConnectionLost": "internetska veza je izgubljena",
+  "fileTooBig": "Datoteka je prevelika",
+  "generic": "Nešto je pošlo po zlu.",
+  "noResponse": "nešto nije u redu, provjerite jeste li povezani na internet",
+  "notImage": "Datoteka nije slika",
+  "invalidSession": "vaša je sesija nevažeća",
+  "statistics": {
+    "fetch": "nije uspio dobiti podatke"
+  },
+  "status": {
+    "404": "pogrešna krajnja točka",
+    "502": "zatražiti pauzu",
+    "503": "usluga nedostupna",
+    "504": "gateway timeout"
+  },
+  "stream": {
+    "connectionLost": "stream veza je izgubljena",
+    "code": {
+      "4000": "interna greška poslužitelja",
+      "4001": "sesija nije važeća",
+      "4002": "zabranjeno",
+      "4003": "nedostaje pretplata",
+      "4004": "zaustavljeno",
+      "4005": "nije uspio otvoriti WebSocket"
+    }
+  }
+}

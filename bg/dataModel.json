@@ -1,0 +1,212 @@
+{
+  "uuid": "документ за самоличност",
+  "timestamp": "клеймо за време",
+  "true": "вярно",
+  "false": "невярно",
+  "name": "име",
+  "originalName": "оригинално име",
+  "version": "версия",
+  "description": "описание",
+  "product": "продукт",
+  "status": "състояние",
+  "type": "Тип",
+  "connection": "Връзка",
+  "connectionOnline": {
+    "true": "на линия",
+    "false": "извън линия"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "обектна версия",
+    "iot": "IoT",
+    "virtual": "виртуален",
+    "created": "създадено",
+    "changed": "променен",
+    "updated": "актуализиран",
+    "historical": "регистрационни файлове с исторически данни",
+    "historicalOptions": {
+      "true": "активиран",
+      "false": "хора с увреждания"
+    },
+    "owner": "собственик",
+    "manufacturer": "производител",
+    "geo": "геолокация",
+    "geoProperties": {
+      "latitude": "географска ширина",
+      "longitude": "географска дължина",
+      "display_name": "име",
+      "address": "адрес"
+    }
+  },
+  "network": "устройство",
+  "network_other": "устройства",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "дневен лимит",
+      "daily_limitProperties": {
+        "point": "точки",
+        "iot_traffic": "IoT трафик",
+        "request": "искане",
+        "request_time": "време за заявка",
+        "dynamic": "динамичен"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "нещо",
+  "device_other": "неща",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "протокол",
+    "serial": "сериен",
+    "communication": "комуникация",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "производител",
+    "control_timeout": "контролно изчакване",
+    "control_when_offline": "контролируеми, докато сте офлайн",
+    "included": "включени",
+    "inclusion_status": "състояние на включване",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "включване в ход...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "успешно включване",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "неуспешно включване",
+      "STATUS_DEVICE_REPORTING": "докладване...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "отчетено успешно",
+      "STATUS_DEVICE_REPORT_FAILURE": "не успя да докладва",
+      "EXCLUDED": "изключени",
+      "INCLUDED": "включени"
+    },
+    "firmware_status": "състояние на фърмуера",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "актуален",
+      "UPDATE_AVAILABLE": "налична актуализация",
+      "UPLOADING": "качвам...",
+      "UPLOAD_COMPLETE": "качването завърши",
+      "UPLOADING_FAILURE": "неуспешно качване",
+      "FLASHING": "мига...",
+      "FLASHING_COMPLETE": "мигането е завършено",
+      "FLASHING_FAILURE": "мигането е неуспешно"
+    },
+    "firmware_upload_progress": "прогрес на качване на фърмуера",
+    "firmware_available_version": "налична версия на фърмуера",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "стойност",
+  "value_other": "стойности",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) име",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "Период",
+    "delta": "делта",
+    "permission": "разрешение",
+    "permissionOptions": {
+      "none": "няма разрешение",
+      "r": "Само за четене",
+      "w": "пишете само",
+      "rw": "Чети и пиши",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "Добре",
+      "update": "актуализация",
+      "pending": "в очакване"
+    },
+    "dataType": "тип данни",
+    "number": "номер",
+    "numberProperties": {
+      "si_conversion": "SI преобразуване",
+      "unit": "мерна единица",
+      "min": "минимален брой",
+      "max": "максимален брой",
+      "step": "размер на стъпката",
+      "mapping": "картографиране",
+      "ordered_mapping": "подредено картографиране",
+      "meaningful_zero": "смислена нула"
+    },
+    "string": "низ",
+    "stringProperties": {
+      "encoding": "кодиране",
+      "max": "максимална дължина"
+    },
+    "blob": "петно",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "пространство от имена"
+    }
+  },
+  "state": "състояние",
+  "state_other": "държави",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "данни",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "текущ",
+      "Control": "желан"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "изпратено",
+      "Pending": "в очакване",
+      "Failed": "се провали"
+    },
+    "status_payment": {
+      "not_shared": "нямате достъп до тези данни",
+      "not_paid": "не сте платили за достъп до тези данни",
+      "no_points": "Надстройте абонамента си, за да видите тези данни"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "първоначални $t(dataModel:state) данни",
+    "initialControlState": "първоначални $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "първоначални $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "не е валиден номер",
+    "lengthTooLong": "дължината не трябва да надвишава {{max}} знака",
+    "numberTooSmall": "числото трябва да е по-голямо от {{number}}",
+    "numberTooLarge": "числото трябва да е по-малко от {{number}}",
+    "outsideNumberRange": "числото трябва да е между {{min}} и {{max}}"
+  },
+  "file": "файл",
+  "file_other": "файлове"
+}

@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "időbélyeg",
+  "true": "igaz",
+  "false": "hamis",
+  "name": "név",
+  "originalName": "eredeti név",
+  "version": "változat",
+  "description": "leírás",
+  "product": "termék",
+  "status": "állapot",
+  "type": "típus",
+  "connection": "kapcsolat",
+  "connectionOnline": {
+    "true": "online",
+    "false": "offline módban"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objektum verzió",
+    "iot": "IoT",
+    "virtual": "virtuális",
+    "created": "létre",
+    "changed": "megváltozott",
+    "updated": "frissítve",
+    "historical": "történelmi adatnaplók",
+    "historicalOptions": {
+      "true": "engedélyezve van",
+      "false": "Tiltva"
+    },
+    "owner": "tulajdonos",
+    "manufacturer": "gyártó",
+    "geo": "földrajzi helymeghatározás",
+    "geoProperties": {
+      "latitude": "szélességi kör",
+      "longitude": "hosszúság",
+      "display_name": "név",
+      "address": "cím"
+    }
+  },
+  "network": "eszköz",
+  "network_other": "eszközöket",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "napi limit",
+      "daily_limitProperties": {
+        "point": "pontokat",
+        "iot_traffic": "IoT forgalom",
+        "request": "kérés",
+        "request_time": "kérjen időt",
+        "dynamic": "dinamikus"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "dolog",
+  "device_other": "dolgokat",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "jegyzőkönyv",
+    "serial": "sorozatszám",
+    "communication": "kommunikáció",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "gyártó",
+    "control_timeout": "ellenőrzési időtúllépés",
+    "control_when_offline": "vezérelhető offline állapotban",
+    "included": "beleértve",
+    "inclusion_status": "befogadási állapot",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "beépítés folyamatban...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "sikeres volt a felvétel",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "felvétele nem sikerült",
+      "STATUS_DEVICE_REPORTING": "jelentés...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "sikeresen jelentették",
+      "STATUS_DEVICE_REPORT_FAILURE": "nem sikerült bejelenteni",
+      "EXCLUDED": "kizárva",
+      "INCLUDED": "beleértve"
+    },
+    "firmware_status": "firmware állapota",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "naprakész",
+      "UPDATE_AVAILABLE": "frissítés elérhető",
+      "UPLOADING": "Feltöltés...",
+      "UPLOAD_COMPLETE": "feltöltés befejeződött",
+      "UPLOADING_FAILURE": "nem sikerült feltölteni",
+      "FLASHING": "villog...",
+      "FLASHING_COMPLETE": "villogás befejeződött",
+      "FLASHING_FAILURE": "villogás nem sikerült"
+    },
+    "firmware_upload_progress": "firmware feltöltése folyamatban van",
+    "firmware_available_version": "firmware elérhető verzió",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "érték",
+  "value_other": "értékeket",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) név",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "időszak",
+    "delta": "delta",
+    "permission": "engedély",
+    "permissionOptions": {
+      "none": "Nincs engedélye",
+      "r": "csak olvasható",
+      "w": "csak írj",
+      "rw": "Olvass és írj",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "rendben",
+      "update": "frissítés",
+      "pending": "függőben levő"
+    },
+    "dataType": "adattípus",
+    "number": "szám",
+    "numberProperties": {
+      "si_conversion": "SI konverzió",
+      "unit": "Mértékegység",
+      "min": "minimális szám",
+      "max": "maximális szám",
+      "step": "lépés mérete",
+      "mapping": "feltérképezése",
+      "ordered_mapping": "megrendelt térképezés",
+      "meaningful_zero": "értelmes nulla"
+    },
+    "string": "húr",
+    "stringProperties": {
+      "encoding": "kódolás",
+      "max": "maximális hossza"
+    },
+    "blob": "folt",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "névtér"
+    }
+  },
+  "state": "állapot",
+  "state_other": "Államok",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "adat",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "jelenlegi",
+      "Control": "kívánatos"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "küldött",
+      "Pending": "függőben levő",
+      "Failed": "nem sikerült"
+    },
+    "status_payment": {
+      "not_shared": "nem fér hozzá ezekhez az adatokhoz",
+      "not_paid": "nem fizetett az adatokhoz való hozzáférésért",
+      "no_points": "Az adatok megtekintéséhez frissítse előfizetését"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "kezdeti $t(dataModel:state) adat",
+    "initialControlState": "kezdeti $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "kezdeti $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "nem érvényes szám",
+    "lengthTooLong": "a hossza nem haladhatja meg a {{max}} karaktert",
+    "numberTooSmall": "a számnak nagyobbnak kell lennie {{number}}-nél",
+    "numberTooLarge": "a számnak kisebbnek kell lennie {{number}}-nél",
+    "outsideNumberRange": "a számnak {{min}} és {{max}} között kell lennie"
+  },
+  "file": "fájlt",
+  "file_other": "fájlokat"
+}

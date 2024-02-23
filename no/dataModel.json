@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "tidsstempel",
+  "true": "ekte",
+  "false": "falsk",
+  "name": "Navn",
+  "originalName": "opprinnelige navn",
+  "version": "versjon",
+  "description": "beskrivelse",
+  "product": "produkt",
+  "status": "status",
+  "type": "type",
+  "connection": "forbindelse",
+  "connectionOnline": {
+    "true": "på nett",
+    "false": "offline"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objektversjon",
+    "iot": "IoT",
+    "virtual": "virtuell",
+    "created": "opprettet",
+    "changed": "endret",
+    "updated": "oppdatert",
+    "historical": "historiske datalogger",
+    "historicalOptions": {
+      "true": "aktivert",
+      "false": "funksjonshemmet"
+    },
+    "owner": "Eieren",
+    "manufacturer": "produsent",
+    "geo": "geolokalisering",
+    "geoProperties": {
+      "latitude": "breddegrad",
+      "longitude": "lengdegrad",
+      "display_name": "Navn",
+      "address": "adresse"
+    }
+  },
+  "network": "enhet",
+  "network_other": "enheter",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "daglig grense",
+      "daily_limitProperties": {
+        "point": "poeng",
+        "iot_traffic": "IoT-trafikk",
+        "request": "be om",
+        "request_time": "be om tid",
+        "dynamic": "dynamisk"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "ting",
+  "device_other": "tingene",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokoll",
+    "serial": "serie",
+    "communication": "kommunikasjon",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "produsent",
+    "control_timeout": "kontroll timeout",
+    "control_when_offline": "kontrollerbar mens du er frakoblet",
+    "included": "inkludert",
+    "inclusion_status": "inkluderingsstatus",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "inkludering pågår...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "inkludering vellykket",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "inkludering mislyktes",
+      "STATUS_DEVICE_REPORTING": "rapporterer...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "rapportert vellykket",
+      "STATUS_DEVICE_REPORT_FAILURE": "klarte ikke å rapportere",
+      "EXCLUDED": "ekskludert",
+      "INCLUDED": "inkludert"
+    },
+    "firmware_status": "fastvarestatus",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "oppdatert",
+      "UPDATE_AVAILABLE": "oppdatering tilgjengelig",
+      "UPLOADING": "laster opp ...",
+      "UPLOAD_COMPLETE": "opplasting fullført",
+      "UPLOADING_FAILURE": "kunne ikke laste opp",
+      "FLASHING": "blinker...",
+      "FLASHING_COMPLETE": "blinking fullført",
+      "FLASHING_FAILURE": "blinking mislyktes"
+    },
+    "firmware_upload_progress": "fremdrift for opplasting av fastvare",
+    "firmware_available_version": "fastvare tilgjengelig versjon",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "verdi",
+  "value_other": "verdier",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) navn",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "periode",
+    "delta": "delta",
+    "permission": "tillatelse",
+    "permissionOptions": {
+      "none": "ingen tillatelse",
+      "r": "skrivebeskyttet",
+      "w": "bare skrive",
+      "rw": "lese og skrive",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "Oppdater",
+      "pending": "Avventer"
+    },
+    "dataType": "data-type",
+    "number": "Antall",
+    "numberProperties": {
+      "si_conversion": "SI-konvertering",
+      "unit": "enhet",
+      "min": "minimum antall",
+      "max": "maksimalt antall",
+      "step": "Trinnstørrelse",
+      "mapping": "kartlegging",
+      "ordered_mapping": "bestilte kartlegging",
+      "meaningful_zero": "meningsfylt null"
+    },
+    "string": "streng",
+    "stringProperties": {
+      "encoding": "koding",
+      "max": "maksimal lengde"
+    },
+    "blob": "blob",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "navneområde"
+    }
+  },
+  "state": "stat",
+  "state_other": "stater",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "data",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "nåværende",
+      "Control": "ønsket"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "sendt",
+      "Pending": "Avventer",
+      "Failed": "mislyktes"
+    },
+    "status_payment": {
+      "not_shared": "du har ikke tilgang til disse dataene",
+      "not_paid": "du ikke har betalt for å få tilgang til disse dataene",
+      "no_points": "Oppgrader abonnementet ditt for å se disse dataene"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "innledende $t(dataModel:state) data",
+    "initialControlState": "innledende $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "innledende $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "ikke et gyldig nummer",
+    "lengthTooLong": "lengden bør ikke overstige {{max}} tegn",
+    "numberTooSmall": "tallet skal være større enn {{number}}",
+    "numberTooLarge": "tallet skal være mindre enn {{number}}",
+    "outsideNumberRange": "tallet skal være mellom {{min}} og {{max}}"
+  },
+  "file": "fil",
+  "file_other": "filer"
+}

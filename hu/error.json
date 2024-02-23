@@ -1,0 +1,49 @@
+{
+  "300054": "Az ellenőrző link lejárt.",
+  "300058": "A felhasználónév nem egyezik",
+  "300063": "Rossz jelszó",
+  "300084": "A felhasználónév vagy a jelszó nem egyezik.",
+  "300098": "Nincs elég pontod a művelet végrehajtásához.",
+  "400006": "Nincs engedélye a hozzáféréshez.",
+  "400017": "Nem módosíthatja az engedélyeket",
+  "9900007": "Kérjük, ellenőrizze, hogy nem robot.",
+  "9900032": "Érvénytelen művelet",
+  "9900145": "feltéve, hogy az UUID nem található.",
+  "9900147": "feltéve, hogy az UUID nem létezik.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "a felhasználónév nem egyezik",
+  "134000004": "Az eszköz hibát jelez.",
+  "134000005": "az eszköz elérhetetlen vagy offline állapotban van.",
+  "134000006": "az eszköz túl sokáig tart a válaszadáshoz.",
+  "139000005": "Elérte a havi eszközkorlátot. Kérjük, frissítse előfizetését a folytatáshoz.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Elérte az engedélyezett eszközök maximális számát.",
+  "444000002": "Fiókjában kifogytak a pontok.",
+  "505000021": "Érvénytelen szűrőparaméter van felhasználva: '{{wrong_value}}'",
+  "internetConnectionLost": "internetkapcsolat megszakadt",
+  "fileTooBig": "A fájl túl nagy",
+  "generic": "Valami elromlott.",
+  "noResponse": "valami hiba történt, kérjük, ellenőrizze, hogy csatlakozik-e az internethez",
+  "notImage": "A fájl nem kép",
+  "invalidSession": "a munkamenet érvénytelen",
+  "statistics": {
+    "fetch": "nem sikerült adatokat szerezni"
+  },
+  "status": {
+    "404": "rossz végpont",
+    "502": "időt kér",
+    "503": "A szolgáltatás nem elérhető",
+    "504": "átjáró időtúllépés"
+  },
+  "stream": {
+    "connectionLost": "megszakadt az adatfolyam kapcsolat",
+    "code": {
+      "4000": "Belső Szerverhiba",
+      "4001": "munkamenet nem érvényes",
+      "4002": "tiltott",
+      "4003": "hiányzik az előfizetés",
+      "4004": "megállt",
+      "4005": "nem sikerült megnyitni a WebSocketet"
+    }
+  }
+}

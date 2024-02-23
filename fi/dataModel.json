@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "aikaleima",
+  "true": "totta",
+  "false": "väärä",
+  "name": "nimi",
+  "originalName": "alkuperäinen nimi",
+  "version": "versio",
+  "description": "kuvaus",
+  "product": "tuote",
+  "status": "Tila",
+  "type": "tyyppi",
+  "connection": "yhteys",
+  "connectionOnline": {
+    "true": "verkossa",
+    "false": "offline-tilassa"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objektin versio",
+    "iot": "IoT",
+    "virtual": "virtuaalinen",
+    "created": "luotu",
+    "changed": "muuttunut",
+    "updated": "päivitetty",
+    "historical": "historialliset tietolokit",
+    "historicalOptions": {
+      "true": "käytössä",
+      "false": "liikuntarajoitteinen"
+    },
+    "owner": "omistaja",
+    "manufacturer": "valmistaja",
+    "geo": "maantieteellinen sijainti",
+    "geoProperties": {
+      "latitude": "leveysaste",
+      "longitude": "pituusaste",
+      "display_name": "nimi",
+      "address": "osoite"
+    }
+  },
+  "network": "laite",
+  "network_other": "laitteet",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "päivittäinen raja",
+      "daily_limitProperties": {
+        "point": "pisteitä",
+        "iot_traffic": "IoT-liikenne",
+        "request": "pyyntö",
+        "request_time": "pyytää aikaa",
+        "dynamic": "dynaaminen"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "asia",
+  "device_other": "asioita",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokollaa",
+    "serial": "sarja",
+    "communication": "viestintää",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "valmistaja",
+    "control_timeout": "ohjausaikakatkaisu",
+    "control_when_offline": "ohjattavissa offline-tilassa",
+    "included": "mukana",
+    "inclusion_status": "sisällyttämisen tila",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "sisällyttäminen käynnissä...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "sisällyttäminen onnistui",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "sisällyttäminen epäonnistui",
+      "STATUS_DEVICE_REPORTING": "raportoida...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "raportoitu onnistuneesti",
+      "STATUS_DEVICE_REPORT_FAILURE": "jättänyt ilmoittamatta",
+      "EXCLUDED": "ulkopuolelle",
+      "INCLUDED": "mukana"
+    },
+    "firmware_status": "laiteohjelmiston tila",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "ajantasalla",
+      "UPDATE_AVAILABLE": "päivitys saatavilla",
+      "UPLOADING": "ladataan...",
+      "UPLOAD_COMPLETE": "lataus valmis",
+      "UPLOADING_FAILURE": "lataus epäonnistui",
+      "FLASHING": "vilkkuu...",
+      "FLASHING_COMPLETE": "vilkkuminen valmis",
+      "FLASHING_FAILURE": "vilkkuminen epäonnistui"
+    },
+    "firmware_upload_progress": "laiteohjelmiston lataus edistyy",
+    "firmware_available_version": "laiteohjelmiston saatavilla oleva versio",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "arvo",
+  "value_other": "arvot",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) nimi",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "ajanjaksoa",
+    "delta": "delta",
+    "permission": "lupa",
+    "permissionOptions": {
+      "none": "ei lupaa",
+      "r": "Lue ainoastaan",
+      "w": "kirjoittaa vain",
+      "rw": "Lue ja kirjoita",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "päivittää",
+      "pending": "vireillä"
+    },
+    "dataType": "tietotyyppi",
+    "number": "määrä",
+    "numberProperties": {
+      "si_conversion": "SI-muunnos",
+      "unit": "yksikkö",
+      "min": "vähimmäismäärä",
+      "max": "enimmäismäärä",
+      "step": "askelkoko",
+      "mapping": "kartoitus",
+      "ordered_mapping": "tilattu kartoitus",
+      "meaningful_zero": "merkityksellinen nolla"
+    },
+    "string": "merkkijono",
+    "stringProperties": {
+      "encoding": "koodaus",
+      "max": "enimmäispituus"
+    },
+    "blob": "möykky",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "nimiavaruus"
+    }
+  },
+  "state": "osavaltio",
+  "state_other": "valtioita",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "tiedot",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "nykyinen",
+      "Control": "haluttu"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "lähetetty",
+      "Pending": "vireillä",
+      "Failed": "epäonnistunut"
+    },
+    "status_payment": {
+      "not_shared": "sinulla ei ole pääsyä näihin tietoihin",
+      "not_paid": "et ole maksanut pääsystä näihin tietoihin",
+      "no_points": "Päivitä tilauksesi nähdäksesi nämä tiedot"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "$t(dataModel:state) alkutietoa",
+    "initialControlState": "alkuperäinen $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "alkuperäinen $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "ei kelvollinen numero",
+    "lengthTooLong": "pituus ei saa ylittää {{max}} merkkiä",
+    "numberTooSmall": "luvun tulee olla suurempi kuin {{number}}",
+    "numberTooLarge": "luvun tulee olla pienempi kuin {{number}}",
+    "outsideNumberRange": "numeron tulee olla {{min}} ja {{max}} välillä"
+  },
+  "file": "tiedosto",
+  "file_other": "tiedostot"
+}

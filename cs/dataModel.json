@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "časové razítko",
+  "true": "skutečný",
+  "false": "Nepravdivé",
+  "name": "název",
+  "originalName": "původní název",
+  "version": "verze",
+  "description": "popis",
+  "product": "produkt",
+  "status": "postavení",
+  "type": "typ",
+  "connection": "spojení",
+  "connectionOnline": {
+    "true": "online",
+    "false": "offline"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "verze objektu",
+    "iot": "IoT",
+    "virtual": "virtuální",
+    "created": "vytvořené",
+    "changed": "změněno",
+    "updated": "aktualizováno",
+    "historical": "protokoly historických dat",
+    "historicalOptions": {
+      "true": "povoleno",
+      "false": "zakázáno"
+    },
+    "owner": "majitel",
+    "manufacturer": "výrobce",
+    "geo": "geolokace",
+    "geoProperties": {
+      "latitude": "zeměpisná šířka",
+      "longitude": "zeměpisná délka",
+      "display_name": "název",
+      "address": "adresa"
+    }
+  },
+  "network": "přístroj",
+  "network_other": "zařízení",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "denní limit",
+      "daily_limitProperties": {
+        "point": "body",
+        "iot_traffic": "IoT provoz",
+        "request": "žádost",
+        "request_time": "čas žádosti",
+        "dynamic": "dynamický"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "věc",
+  "device_other": "věci",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokol",
+    "serial": "seriál",
+    "communication": "sdělení",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "výrobce",
+    "control_timeout": "časový limit ovládání",
+    "control_when_offline": "ovladatelné i offline",
+    "included": "zahrnuta",
+    "inclusion_status": "stav zařazení",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "probíhá zařazování...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "zařazení úspěšné",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "zařazení se nezdařilo",
+      "STATUS_DEVICE_REPORTING": "hlášení...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "úspěšně nahlášeno",
+      "STATUS_DEVICE_REPORT_FAILURE": "nepodařilo nahlásit",
+      "EXCLUDED": "vyloučeno",
+      "INCLUDED": "zahrnuta"
+    },
+    "firmware_status": "stav firmwaru",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "aktuální",
+      "UPDATE_AVAILABLE": "aktualizace k dispozici",
+      "UPLOADING": "nahrávání...",
+      "UPLOAD_COMPLETE": "nahrávání dokončeno",
+      "UPLOADING_FAILURE": "se nepodařilo nahrát",
+      "FLASHING": "bliká...",
+      "FLASHING_COMPLETE": "blikání dokončeno",
+      "FLASHING_FAILURE": "blikání se nezdařilo"
+    },
+    "firmware_upload_progress": "průběh nahrávání firmwaru",
+    "firmware_available_version": "dostupná verze firmwaru",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "hodnota",
+  "value_other": "hodnoty",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) jméno",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "doba",
+    "delta": "delta",
+    "permission": "povolení",
+    "permissionOptions": {
+      "none": "bez povolení",
+      "r": "pouze ke čtení",
+      "w": "pouze psát",
+      "rw": "číst a psát",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "Aktualizace",
+      "pending": "čekající"
+    },
+    "dataType": "datový typ",
+    "number": "číslo",
+    "numberProperties": {
+      "si_conversion": "převod SI",
+      "unit": "jednotka",
+      "min": "minimální počet",
+      "max": "maximální počet",
+      "step": "velikost kroku",
+      "mapping": "mapování",
+      "ordered_mapping": "objednané mapování",
+      "meaningful_zero": "smysluplná nula"
+    },
+    "string": "tětiva",
+    "stringProperties": {
+      "encoding": "kódování",
+      "max": "maximální délka"
+    },
+    "blob": "kapka",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "jmenný prostor"
+    }
+  },
+  "state": "Stát",
+  "state_other": "státy",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "data",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "aktuální",
+      "Control": "požadovaný"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "odesláno",
+      "Pending": "čekající",
+      "Failed": "nepodařilo"
+    },
+    "status_payment": {
+      "not_shared": "k těmto údajům nemáte přístup",
+      "not_paid": "nezaplatili jste za přístup k těmto údajům",
+      "no_points": "Chcete-li zobrazit tato data, upgradujte své předplatné"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "počátečních $t(dataModel:state) údajů",
+    "initialControlState": "počáteční $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "počáteční $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "není platné číslo",
+    "lengthTooLong": "délka by neměla přesáhnout {{max}} znaků",
+    "numberTooSmall": "číslo by mělo být větší než {{number}}",
+    "numberTooLarge": "číslo by mělo být menší než {{number}}",
+    "outsideNumberRange": "číslo by mělo být mezi {{min}} a {{max}}"
+  },
+  "file": "soubor",
+  "file_other": "soubory"
+}

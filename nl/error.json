@@ -1,0 +1,49 @@
+{
+  "300054": "Verificatielink is verlopen.",
+  "300058": "Gebruikersnaam komt niet overeen",
+  "300063": "Verkeerd wachtwoord",
+  "300084": "Gebruikersnaam of wachtwoord komen niet overeen.",
+  "300098": "Je hebt niet genoeg punten om deze actie uit te voeren.",
+  "400006": "U heeft geen toestemming om hier toegang toe te krijgen.",
+  "400017": "U kunt de machtigingen niet wijzigen",
+  "9900007": "Controleer of u geen robot bent.",
+  "9900032": "Ongeldige actie",
+  "9900145": "op voorwaarde dat UUID niet wordt gevonden.",
+  "9900147": "op voorwaarde dat UUID niet bestaat.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "gebruikersnaam komt niet overeen",
+  "134000004": "Het apparaat heeft een fout gerapporteerd.",
+  "134000005": "apparaat is onbereikbaar of offline.",
+  "134000006": "Het duurt te lang voordat het apparaat reageert.",
+  "139000005": "U heeft uw maandelijkse apparaatlimiet bereikt. Upgrade uw abonnement om door te gaan.",
+  "368000003": "$t(error:generic)",
+  "441000001": "U heeft het maximale aantal toegestane apparaten bereikt.",
+  "444000002": "Uw account heeft geen punten meer.",
+  "505000021": "Er is een ongeldige filterparameter gebruikt: '{{wrong_value}}'",
+  "internetConnectionLost": "internetverbinding valt weg",
+  "fileTooBig": "Het bestand is te groot",
+  "generic": "Er is iets fout gegaan.",
+  "noResponse": "Er is iets misgegaan. Controleer of u verbonden bent met internet",
+  "notImage": "Het bestand is geen afbeelding",
+  "invalidSession": "uw sessie is ongeldig",
+  "statistics": {
+    "fetch": "kon geen gegevens ophalen"
+  },
+  "status": {
+    "404": "verkeerd eindpunt",
+    "502": "verzoek time-out",
+    "503": "Service onbeschikbaar",
+    "504": "gateway-time-out"
+  },
+  "stream": {
+    "connectionLost": "streamverbinding is verbroken",
+    "code": {
+      "4000": "Interne Server Fout",
+      "4001": "sessie niet geldig",
+      "4002": "verboden",
+      "4003": "ontbrekend abonnement",
+      "4004": "gestopt",
+      "4005": "Kan WebSocket niet openen"
+    }
+  }
+}

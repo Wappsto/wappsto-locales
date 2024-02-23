@@ -2,7 +2,33 @@
 const fs = require("fs");
 
 const URL = "https://translate.googleapis.com/translate_a/single";
-const LANGS = ["da", "de", "es", "ca", "fr", "pt", "it"];
+const LANGS = [
+  "bg",
+  "ca",
+  "cs",
+  "da",
+  "de",
+  "el",
+  "es",
+  "et",
+  "fi",
+  "fr",
+  "hr",
+  "hu",
+  "it",
+  "lt",
+  "lv",
+  "mk",
+  "nl",
+  "no",
+  "pl",
+  "pt",
+  "ro",
+  "sk",
+  "sl",
+  "sr",
+  "sv",
+];
 
 const CACHE = {
   KEY: {},

@@ -1,0 +1,212 @@
+{
+  "uuid": "ID",
+  "timestamp": "tidsstämpel",
+  "true": "Sann",
+  "false": "falsk",
+  "name": "namn",
+  "originalName": "ursprungliga namn",
+  "version": "version",
+  "description": "beskrivning",
+  "product": "produkt",
+  "status": "status",
+  "type": "typ",
+  "connection": "förbindelse",
+  "connectionOnline": {
+    "true": "uppkopplad",
+    "false": "off-line"
+  },
+  "universalMeta": {
+    "id": "$t(dataModel:uuid)",
+    "version": "objektversion",
+    "iot": "IoT",
+    "virtual": "virtuell",
+    "created": "skapas",
+    "changed": "ändrats",
+    "updated": "uppdaterad",
+    "historical": "historiska dataloggar",
+    "historicalOptions": {
+      "true": "aktiverad",
+      "false": "Inaktiverad"
+    },
+    "owner": "ägare",
+    "manufacturer": "tillverkare",
+    "geo": "geolokalisering",
+    "geoProperties": {
+      "latitude": "latitud",
+      "longitude": "longitud",
+      "display_name": "namn",
+      "address": "adress"
+    }
+  },
+  "network": "enhet",
+  "network_other": "enheter",
+  "networkProperties": {
+    "name": "$t(dataModel:name)",
+    "description": "$t(dataModel:description)",
+    "id": "$t(dataModel:networkProperties.meta.id)",
+    "meta": {
+      "id": "$t(dataModel:network) $t(dataModel:uuid)",
+      "product": "$t(dataModel:product)",
+      "connection": "$t(dataModel:network) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "daily_limit": "daglig gräns",
+      "daily_limitProperties": {
+        "point": "poäng",
+        "iot_traffic": "IoT-trafik",
+        "request": "begäran",
+        "request_time": "begära tid",
+        "dynamic": "dynamisk"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    }
+  },
+  "device": "sak",
+  "device_other": "saker",
+  "deviceProperties": {
+    "meta": {
+      "id": "$t(dataModel:device) $t(dataModel:uuid)",
+      "connection": "$t(dataModel:device) $t(dataModel:connection)",
+      "connectionOnline": {
+        "true": "$t(dataModel:connectionOnline.true)",
+        "false": "$t(dataModel:connectionOnline.false)"
+      },
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "name": "$t(dataModel:name)",
+    "id": "$t(dataModel:deviceProperties.meta.id)",
+    "version": "$t(dataModel:version)",
+    "product": "$t(dataModel:product)",
+    "protocol": "protokoll",
+    "serial": "serie",
+    "communication": "kommunikation",
+    "description": "$t(dataModel:description)",
+    "manufacturer": "tillverkare",
+    "control_timeout": "kontroll timeout",
+    "control_when_offline": "kontrollerbar när du är offline",
+    "included": "ingår",
+    "inclusion_status": "inkluderingsstatus",
+    "inclusion_statusOptions": {
+      "STATUS_DEVICE_INCLUDING": "inkludering pågår...",
+      "STATUS_DEVICE_INCLUSION_SUCCESS": "inkluderingen lyckades",
+      "STATUS_DEVICE_INCLUSION_FAILURE": "inkludering misslyckades",
+      "STATUS_DEVICE_REPORTING": "rapporterar...",
+      "STATUS_DEVICE_REPORT_SUCCESS": "rapporterade framgångsrikt",
+      "STATUS_DEVICE_REPORT_FAILURE": "misslyckades med att rapportera",
+      "EXCLUDED": "utesluten",
+      "INCLUDED": "ingår"
+    },
+    "firmware_status": "firmware status",
+    "firmware_statusOptions": {
+      "UP_TO_DATE": "aktuell",
+      "UPDATE_AVAILABLE": "uppdatering tillgänglig",
+      "UPLOADING": "laddar upp...",
+      "UPLOAD_COMPLETE": "uppladdningen är klar",
+      "UPLOADING_FAILURE": "misslyckades med att ladda upp",
+      "FLASHING": "blinkar...",
+      "FLASHING_COMPLETE": "blinkningen är klar",
+      "FLASHING_FAILURE": "blinkningen misslyckades"
+    },
+    "firmware_upload_progress": "uppladdning av firmware",
+    "firmware_available_version": "tillgänglig version av firmware",
+    "status": "$t(dataModel:status)"
+  },
+  "value": "värde",
+  "value_other": "värden",
+  "valueProperties": {
+    "meta": {
+      "id": "$t(dataModel:value) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:valueProperties.meta.id)",
+    "name": "$t(dataModel:value) namn",
+    "description": "$t(dataModel:networkProperties.description)",
+    "type": "$t(dataModel:type)",
+    "period": "period",
+    "delta": "delta",
+    "permission": "lov",
+    "permissionOptions": {
+      "none": "inget tillstånd",
+      "r": "endast läs",
+      "w": "bara skriva",
+      "rw": "Läsa och skriva",
+      "wr": "$t(dataModel:valueProperties.permissionOptions.rw)"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "ok": "OK",
+      "update": "uppdatering",
+      "pending": "i väntan på"
+    },
+    "dataType": "data typ",
+    "number": "siffra",
+    "numberProperties": {
+      "si_conversion": "SI-omvandling",
+      "unit": "enhet",
+      "min": "minsta antal",
+      "max": "maximalt antal",
+      "step": "steglängd",
+      "mapping": "kartläggning",
+      "ordered_mapping": "beställt kartläggning",
+      "meaningful_zero": "meningsfull noll"
+    },
+    "string": "sträng",
+    "stringProperties": {
+      "encoding": "kodning",
+      "max": "maximal längd"
+    },
+    "blob": "klick",
+    "blobProperties": {
+      "encoding": "$t(dataModel:valueProperties.stringProperties.encoding)",
+      "max": "$t(dataModel:valueProperties.stringProperties.max)"
+    },
+    "xml": "XML",
+    "xmlProperties": {
+      "xsd": "XSD",
+      "namespace": "namnutrymme"
+    }
+  },
+  "state": "stat",
+  "state_other": "stater",
+  "stateProperties": {
+    "meta": {
+      "id": "$t(dataModel:state) $t(dataModel:uuid)",
+      "name_by_user": "$t(dataModel:name)"
+    },
+    "id": "$t(dataModel:stateProperties.meta.id)",
+    "data": "data",
+    "type": "$t(dataModel:type)",
+    "typeOptions": {
+      "Report": "nuvarande",
+      "Control": "önskad"
+    },
+    "status": "$t(dataModel:status)",
+    "statusOptions": {
+      "Send": "skickas",
+      "Pending": "i väntan på",
+      "Failed": "misslyckades"
+    },
+    "status_payment": {
+      "not_shared": "du har inte tillgång till denna data",
+      "not_paid": "du inte har betalat för att få tillgång till denna data",
+      "no_points": "Uppgradera ditt abonnemang för att se denna data"
+    },
+    "timestamp": "$t(dataModel:timestamp)",
+    "controlState": "$t(dataModel:stateProperties.typeOptions.Control) $t(dataModel:state)",
+    "reportState": "$t(dataModel:stateProperties.typeOptions.Report) $t(dataModel:state)",
+    "initialState": "initiala $t(dataModel:state) data",
+    "initialControlState": "initiala $t(dataModel:stateProperties.controlState)",
+    "initialReportState": "initiala $t(dataModel:stateProperties.reportState)"
+  },
+  "validation": {
+    "invalidNumber": "inte ett giltigt nummer",
+    "lengthTooLong": "längden får inte överstiga {{max}} tecken",
+    "numberTooSmall": "antalet ska vara större än {{number}}",
+    "numberTooLarge": "antalet ska vara mindre än {{number}}",
+    "outsideNumberRange": "numret ska vara mellan {{min}} och {{max}}"
+  },
+  "file": "fil",
+  "file_other": "filer"
+}

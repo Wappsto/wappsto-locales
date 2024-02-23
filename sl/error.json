@@ -1,0 +1,49 @@
+{
+  "300054": "Povezava za preverjanje je potekla.",
+  "300058": "Uporabniško ime se ne ujema",
+  "300063": "Napačno geslo",
+  "300084": "Uporabniško ime ali geslo se ne ujemata.",
+  "300098": "Za izvedbo tega dejanja nimate dovolj točk.",
+  "400006": "Nimate dovoljenja za dostop do tega.",
+  "400017": "Dovoljenj ne morete spremeniti",
+  "9900007": "Preverite, ali niste robot.",
+  "9900032": "Neveljavno dejanje",
+  "9900145": "če UUID ni najden.",
+  "9900147": "če UUID ne obstaja.",
+  "117000000": "$t(error:invalidSession)",
+  "129000004": "uporabniško ime se ne ujema",
+  "134000004": "Naprava je javila napako.",
+  "134000005": "naprava je nedosegljiva ali brez povezave.",
+  "134000006": "naprava se predolgo odziva.",
+  "139000005": "Dosegli ste mesečno omejitev naprave. Za nadaljevanje nadgradite svojo naročnino.",
+  "368000003": "$t(error:generic)",
+  "441000001": "Dosegli ste največje dovoljeno število naprav.",
+  "444000002": "Vašemu računu je zmanjkalo točk.",
+  "505000021": "Uporabljen je neveljaven parameter filtra: '{{wrong_value}}'",
+  "internetConnectionLost": "internetna povezava je prekinjena",
+  "fileTooBig": "Datoteka je prevelika",
+  "generic": "Nekaj ​​je šlo narobe.",
+  "noResponse": "nekaj je šlo narobe, preverite, ali ste povezani v internet",
+  "notImage": "Datoteka ni slika",
+  "invalidSession": "vaša seja je neveljavna",
+  "statistics": {
+    "fetch": "podatkov ni uspelo pridobiti"
+  },
+  "status": {
+    "404": "napačna končna točka",
+    "502": "zahtevati odmor",
+    "503": "Storitev ni na voljo",
+    "504": "časovna omejitev prehoda"
+  },
+  "stream": {
+    "connectionLost": "pretočna povezava je izgubljena",
+    "code": {
+      "4000": "napaka notranjega strežnika",
+      "4001": "seja ni veljavna",
+      "4002": "prepovedano",
+      "4003": "manjka naročnina",
+      "4004": "ustavil",
+      "4005": "WebSocket ni uspel odpreti"
+    }
+  }
+}
